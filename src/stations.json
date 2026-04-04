@@ -1,0 +1,125 @@
+[
+    {
+        "name": "Kyōbashi",
+        "name_kanji": "京[きょう]橋[ばし]",
+        "description": "Kyōbashi houses one of the city's largest business districts and is close to many tourist attractions. This district is famous for its shopping and nightlife. (due to the presence of many bars, the prostitution and exploitation is heavy in this area.)",
+        "song": "Old McDonald",
+        "verses": [
+            {
+                "ref": "2 Corinthians 4:4",
+                "text": "In their case the god of this world has blinded the minds of the unbelievers, to keep them from seeing the light of the gospel of the glory of Christ, who is the image of God."
+            },
+            {
+                "ref": "Psalm 34:8",
+                "text": "Oh, taste and see that the LORD is good! Blessed is the man who takes refuge in him!"
+            }
+        ],
+        "prayer_points": [
+            "Pray that the people of Osaka would be able to taste and see that God is good and that He alone can fulfill their every need.",
+            "Pray that God would open the eyes of those involved in sexual exploitation and prostitution in Kyobashi.",
+            "Ask God to show the Japanese the light of the gospel of the glory of Christ so that they may turn to Jesus."
+        ]
+    },
+    {
+        "name": "Sakuranomiya",
+        "name_kanji": "桜[さくら]ノ 宮[みや]",
+        "description": "Sakuranomiya literally translates as \"Cherry Blossom Palace.\" The park near the station boasts beautiful cherry blossom trees and is a popular spot for picnickers, runners, and those who enjoy nature.",
+        "song": "Sakura",
+        "verses": [
+            {
+                "ref": "Acts 26:18",
+                "text": "So that they may turn from darkness to light and from the power of satan to God, that they may receive forgiveness of sins and a place among those who are sanctified by faith in me."
+            },
+            {
+                "ref": "Luke 14:22-23",
+                "text": "And the servant said, 'Sir, what you commanded has been done, and still there is room.' And the master said to the servant, 'Go out to the highways and hedges and compel people to come in, that my house may be filled.'"
+            }
+        ],
+        "prayer_points": [
+            "Ask God to use the beauty in nature to reveal Himself to those in Japan.",
+            "Pray that God's love would be shown to the homeless, elderly and poor who live near this area.",
+            "Pray that Sakuranomiya park could be used in outreach and ministry to reach many Japanese with the Gospel."
+        ]
+    },
+    {
+        "name": "Tenma",
+        "name_kanji": "天[てん]満[ま]",
+        "description": "The Tenma area is home to the longest shopping street in Japan, over 1.5 miles. This area began to Aourish due to the nearby Shinto shrine where people came to worship the god of studies. A festival is held each July with fireworks and parades along the street and river.",
+        "song": "Fireworks",
+        "verses": [
+            {
+                "ref": "Ephesians 2:12-13",
+                "text": "Remember that you were at that time separated from Christ, ... having no hope and without God in the world. But now in Christ Jesus you who once were far off have been brought near by the blood of Christ."
+            }
+        ],
+        "prayer_points": [
+            "Pray the Japanese would see that materialism and wealth cannot fill the God-shaped void in their lives.",
+            "There are many vacant buildings throughout the shopping street. Ask that God would prepare a place for a church plant.",
+            "Pray that the festival near Tenma would be used as an opportunity to share Christ rather than idolatrous worship."
+        ]
+    },
+    {
+        "name": "Ōsaka",
+        "name_kanji": "大[おお]阪[さか]"
+    },
+    {
+        "name": "Fukushima",
+        "name_kanji": "福[ふく]島[しま]"
+    },
+    {
+        "name": "Noda",
+        "name_kanji": "野[の]田[だ]"
+    },
+    {
+        "name": "Nishikujō",
+        "name_kanji": "西[にし]九[く]条[じょう]"
+    },
+    {
+        "name": "Bentenchō",
+        "name_kanji": "弁[べん]天[てん]町[ちょう]"
+    },
+    {
+        "name": "Taishō",
+        "name_kanji": "大[たい]正[しょう]"
+    },
+    {
+        "name": "Ashiharabashi",
+        "name_kanji": "芦[あし]原[はら]橋[ばし]"
+    },
+    {
+        "name": "Imamiya",
+        "name_kanji": "今[いま]宮[みや]"
+    },
+    {
+        "name": "Shin-Imamiya",
+        "name_kanji": "新[しん]今[いま]宮[みや]"
+    },
+    {
+        "name": "Tennōji",
+        "name_kanji": "天[てん]王[おう]寺[じ]"
+    },
+    {
+        "name": "Teradachō",
+        "name_kanji": "寺[てら]田[だ]町[ちょう]"
+    },
+    {
+        "name": "Momodani",
+        "name_kanji": "桃[もも]谷[だに]"
+    },
+    {
+        "name": "Tsuruhashi",
+        "name_kanji": "鶴[つる]橋[はし]"
+    },
+    {
+        "name": "Tamatsukuri",
+        "name_kanji": "玉[たま]造[つくり]"
+    },
+    {
+        "name": "Morinomiya",
+        "name_kanji": "森[もり]ノ 宮[みや]"
+    },
+    {
+        "name": "Ōsakajōkōen",
+        "name_kanji": "大[おお]阪[さか]城[じょう]公[こう]園[えん]"
+    }
+]
