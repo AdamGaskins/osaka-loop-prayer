@@ -5,6 +5,7 @@ const props = defineProps<{
     kanji: string
     class?: string
     rubyClass?: string
+    kanjiOnly?: boolean
 }>()
 
 const characters = computed(() => {
@@ -40,7 +41,7 @@ const characters = computed(() => {
 <template>
     <ruby :class="class">
         <template v-for="c of characters">
-            {{ c[0] }}<rt :class="rubyClass">{{ c[1] }}</rt>
+            {{ c[0] }}<rt v-if="!kanjiOnly" :class="rubyClass">{{ c[1] }}</rt>
         </template>
     </ruby>
 </template>

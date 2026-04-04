@@ -14,20 +14,24 @@ const prayerColors = ['bg-blue-500', 'bg-green-500', 'bg-red-500']
 </script>
 
 <template>
-    <div class="relative h-full pt-6">
+    <div class="relative h-full">
         <Transition name="slide-side" mode="out-in">
             <div v-if="viewingFront" class="side">
-                <!-- Information -->
-                <InfoBoard>
-                    <h1>ご案内　<small>Information</small></h1>
-                    <p>{{ station.description }}</p>
-                </InfoBoard>
+                <div class="h-full overflow-scroll">
+                    <!-- Information -->
+                    <InfoBoard>
+                        <h1>ご案内　<small>Information</small></h1>
+                        <p>{{ station.description }}</p>
+                    </InfoBoard>
 
-                <div
-                    class="mt-4 mx-4 p-3 bg-white leading-4.5 border border-black shadow-xl rounded-sm"
-                >
-                    <p class="font-bold mb-2 text-xl">{{ station.verses?.[0]?.ref }}</p>
-                    <p>{{ station.verses?.[0]?.text }}</p>
+                    <div
+                        class="mt-4 mx-4 p-3 bg-white leading-4.5 border border-black shadow-xl rounded-sm"
+                    >
+                        <p>
+                            {{ station.verses?.[0]?.text }}
+                            <span class="text-sm">{{ station.verses?.[0]?.ref }}</span>
+                        </p>
+                    </div>
                 </div>
 
                 <div
@@ -39,15 +43,17 @@ const prayerColors = ['bg-blue-500', 'bg-green-500', 'bg-red-500']
                 </div>
             </div>
             <div v-else class="side">
-                <InfoBoard v-for="(prayer, i) in station.prayer_points" class="mb-2">
-                    <div class="flex">
-                        <div class="text-6xl font-light pl-3 text-center w-16 shrink-0">
-                            {{ i }}
+                <div class="h-full overflow-scroll">
+                    <InfoBoard v-for="(prayer, i) in station.prayer_points" class="mb-2">
+                        <div class="flex">
+                            <div class="text-6xl font-light pl-3 text-center w-16 shrink-0">
+                                {{ i }}
+                            </div>
+                            <div :class="prayerColors[i]" class="shrink-0 w-4 mt-4"></div>
+                            <div class="px-4 py-2 leading-5">{{ prayer }}</div>
                         </div>
-                        <div :class="prayerColors[i]" class="shrink-0 w-4 mt-4"></div>
-                        <div class="px-4 py-2">{{ prayer }}</div>
-                    </div>
-                </InfoBoard>
+                    </InfoBoard>
+                </div>
 
                 <div
                     class="flex items-center m-4 px-6 bg-[#FFD700] border border-black shadow-xl rounded-sm shrink-0"
@@ -67,6 +73,9 @@ const prayerColors = ['bg-blue-500', 'bg-green-500', 'bg-red-500']
     width: 100%;
     position: absolute;
     transform: perspective(900px) rotateY(0);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
 }
 
 .slide-side-enter-active {

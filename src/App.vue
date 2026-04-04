@@ -28,30 +28,27 @@ function goPrevStation() {
 </script>
 
 <template>
-    <div class="h-dvh w-full flex flex-col overflow-y-hidden overflow-x-hidden">
+    <div class="h-dvh w-full flex flex-col overflow-y-hidden overflow-x-visible">
         <div class="relative">
-            <div class="h-4"></div>
-
             <!-- Station Sign -->
-            <div class="m-4 border border-black shadow-xl rounded-sm">
-                <!-- <button class="text-4xl px-2" @click="prevStation">↪️</button> -->
+            <div class="m-2 border border-black shadow-xl rounded-sm">
                 <div class="text-center py-2">
                     <Kanji
+                        kanjiOnly
                         :kanji="currentStation.name_kanji"
-                        class="text-4xl font-bold"
+                        class="text-2xl font-bold"
                         rubyClass="text-lg"
                     />
-                    <div class="font-light text-3xl mt-1">{{ currentStation.name }}</div>
+                    <div class="font-light text-3xl">{{ currentStation.name }}</div>
                 </div>
                 <div class="bg-[#E80000] flex text-white py-1 px-3">
                     <div class="whitespace-nowrap">&#9664; {{ peekPrev.name }}</div>
                     <div class="w-full"></div>
                     <div class="whitespace-nowrap">{{ peekNext.name }} &#9654;</div>
                 </div>
-                <!-- <button class="text-4xl px-2" @click="nextStation">↩️</button> -->
             </div>
 
-            <div class="flex">
+            <div class="flex my-4">
                 <Map class="w-full" :currentStation="stationIndex" :stations="stations" />
             </div>
 
@@ -62,8 +59,6 @@ function goPrevStation() {
         <div class="h-full shrink">
             <FullStationDisplay :station="currentStation" :key="stationIndex" />
         </div>
-
-        <div class="h-4 shrink-0"></div>
     </div>
 </template>
 
@@ -71,7 +66,7 @@ function goPrevStation() {
 html,
 body,
 #app {
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow-y: visible;
+    overflow-x: visible;
 }
 </style>

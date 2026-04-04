@@ -9,7 +9,10 @@ defineProps<{
 
 <template>
     <div class="p-4">
-        <div class="w-full h-20 outline-20 -outline-offset-10 outline-[#E80000] rounded-[50%]">
+        <div class="w-full h-10 rounded-[100%] relative">
+            <div
+                class="absolute -top-[10px] -bottom-[10px] -left-[11px] -right-[13px] border-20 rounded-full border-red-500"
+            ></div>
             <div class="w-full h-full">
                 <!-- station icons -->
                 <div
@@ -86,8 +89,8 @@ defineProps<{
 
 .map-icon {
     display: inline-block;
-    offset-path: rect(0% 100% 100% 0 round 50%);
-    offset-distance: calc(100% * var(--p) + 10%);
+    offset-path: rect(0% 100% 100% 0% round 11%);
+    offset-distance: calc(100% * var(--p) + 35%);
     offset-rotate: 0deg;
     offset-anchor: center;
 }
