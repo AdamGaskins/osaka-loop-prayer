@@ -60,66 +60,282 @@
     },
     {
         "name": "Ōsaka",
-        "name_kanji": "大[おお]阪[さか]"
+        "name_kanji": "大[おお]阪[さか]",
+        "description": "",
+        "song": "",
+        "verses": [
+            {
+                "ref": "",
+                "text": ""
+            },
+            {
+                "ref": "",
+                "text": ""
+            }
+        ],
+        "prayer_points": ["", "", ""]
     },
     {
         "name": "Fukushima",
-        "name_kanji": "福[ふく]島[しま]"
+        "name_kanji": "福[ふく]島[しま]",
+        "description": "",
+        "song": "",
+        "verses": [
+            {
+                "ref": "",
+                "text": ""
+            },
+            {
+                "ref": "",
+                "text": ""
+            }
+        ],
+        "prayer_points": ["", "", ""]
     },
     {
         "name": "Noda",
-        "name_kanji": "野[の]田[だ]"
+        "name_kanji": "野[の]田[だ]",
+        "description": "",
+        "song": "",
+        "verses": [
+            {
+                "ref": "",
+                "text": ""
+            },
+            {
+                "ref": "",
+                "text": ""
+            }
+        ],
+        "prayer_points": ["", "", ""]
     },
     {
         "name": "Nishikujō",
-        "name_kanji": "西[にし]九[く]条[じょう]"
+        "name_kanji": "西[にし]九[く]条[じょう]",
+        "description": "",
+        "song": "",
+        "verses": [
+            {
+                "ref": "",
+                "text": ""
+            },
+            {
+                "ref": "",
+                "text": ""
+            }
+        ],
+        "prayer_points": ["", "", ""]
     },
     {
         "name": "Bentenchō",
-        "name_kanji": "弁[べん]天[てん]町[ちょう]"
+        "name_kanji": "弁[べん]天[てん]町[ちょう]",
+        "description": "",
+        "song": "",
+        "verses": [
+            {
+                "ref": "",
+                "text": ""
+            },
+            {
+                "ref": "",
+                "text": ""
+            }
+        ],
+        "prayer_points": ["", "", ""]
     },
     {
         "name": "Taishō",
-        "name_kanji": "大[たい]正[しょう]"
+        "name_kanji": "大[たい]正[しょう]",
+        "description": "",
+        "song": "",
+        "verses": [
+            {
+                "ref": "",
+                "text": ""
+            },
+            {
+                "ref": "",
+                "text": ""
+            }
+        ],
+        "prayer_points": ["", "", ""]
     },
     {
         "name": "Ashiharabashi",
-        "name_kanji": "芦[あし]原[はら]橋[ばし]"
+        "name_kanji": "芦[あし]原[はら]橋[ばし]",
+        "description": "",
+        "song": "",
+        "verses": [
+            {
+                "ref": "",
+                "text": ""
+            },
+            {
+                "ref": "",
+                "text": ""
+            }
+        ],
+        "prayer_points": ["", "", ""]
     },
     {
         "name": "Imamiya",
-        "name_kanji": "今[いま]宮[みや]"
+        "name_kanji": "今[いま]宮[みや]",
+        "description": "",
+        "song": "",
+        "verses": [
+            {
+                "ref": "",
+                "text": ""
+            },
+            {
+                "ref": "",
+                "text": ""
+            }
+        ],
+        "prayer_points": ["", "", ""]
     },
     {
         "name": "Shin-Imamiya",
-        "name_kanji": "新[しん]今[いま]宮[みや]"
+        "name_kanji": "新[しん]今[いま]宮[みや]",
+        "description": "",
+        "song": "",
+        "verses": [
+            {
+                "ref": "",
+                "text": ""
+            },
+            {
+                "ref": "",
+                "text": ""
+            }
+        ],
+        "prayer_points": ["", "", ""]
     },
     {
         "name": "Tennōji",
-        "name_kanji": "天[てん]王[おう]寺[じ]"
+        "name_kanji": "天[てん]王[おう]寺[じ]",
+        "description": "",
+        "song": "",
+        "verses": [
+            {
+                "ref": "",
+                "text": ""
+            },
+            {
+                "ref": "",
+                "text": ""
+            }
+        ],
+        "prayer_points": ["", "", ""]
     },
     {
         "name": "Teradachō",
-        "name_kanji": "寺[てら]田[だ]町[ちょう]"
+        "name_kanji": "寺[てら]田[だ]町[ちょう]",
+        "description": "",
+        "song": "",
+        "verses": [
+            {
+                "ref": "",
+                "text": ""
+            },
+            {
+                "ref": "",
+                "text": ""
+            }
+        ],
+        "prayer_points": ["", "", ""]
     },
     {
         "name": "Momodani",
-        "name_kanji": "桃[もも]谷[だに]"
+        "name_kanji": "桃[もも]谷[だに]",
+        "description": "",
+        "song": "",
+        "verses": [
+            {
+                "ref": "",
+                "text": ""
+            },
+            {
+                "ref": "",
+                "text": ""
+            }
+        ],
+        "prayer_points": ["", "", ""]
     },
     {
         "name": "Tsuruhashi",
-        "name_kanji": "鶴[つる]橋[はし]"
+        "name_kanji": "鶴[つる]橋[はし]",
+        "description": "",
+        "song": "",
+        "verses": [
+            {
+                "ref": "",
+                "text": ""
+            },
+            {
+                "ref": "",
+                "text": ""
+            }
+        ],
+        "prayer_points": ["", "", ""]
     },
     {
         "name": "Tamatsukuri",
-        "name_kanji": "玉[たま]造[つくり]"
+        "name_kanji": "玉[たま]造[つくり]",
+        "description": "",
+        "song": "",
+        "verses": [
+            {
+                "ref": "",
+                "text": ""
+            },
+            {
+                "ref": "",
+                "text": ""
+            }
+        ],
+        "prayer_points": ["", "", ""]
     },
     {
         "name": "Morinomiya",
-        "name_kanji": "森[もり]ノ 宮[みや]"
+        "name_kanji": "森[もり]ノ 宮[みや]",
+        "description": "This station is also used to access Osaka Castle Park and was a catalyst for the renewal of other stations. Adiacent to Morinomiya Station, there are many scenic paths, water fountains and a iogging course, which attract locals as well as tourists.",
+        "song": "Bear of the Forest",
+        "verses": [
+            {
+                "ref": "Romans 1:20",
+                "text": "For his invisible attributes, namely, his eternal power and divine nature, have been clearly perceived, ever since the creation of the world, in the things that have been made."
+            },
+            {
+                "ref": "John 7:36-38",
+                "text": "Jesus stood up and cried out, \"If anyone thirsts, let him come to me and drink. Whoever believes in me, as the scripture has said, 'Out of his heart will flow rivers of living water.'\""
+            }
+        ],
+        "prayer_points": [
+            "Pray that Japanese churches would become the front runners and catalysts for explosive progress in the mission task in Japan.",
+            "As the Japanese search for rest and a place of relaxation in the midst of the city, pray that they would seek Jesus for their true rest and \"living water\".",
+            "As individuals board at this station pray that God would reveal Himself to them through His beautiful creation."
+        ]
     },
     {
         "name": "Ōsakajōkōen",
-        "name_kanji": "大[おお]阪[さか]城[じょう]公[こう]園[えん]"
+        "name_kanji": "大[おお]阪[さか]城[じょう]公[こう]園[えん]",
+        "description": "Osaka Castle Park surrounds the famous Osaka Castle which can often be seen lit up at night. Built by Toyotomi Hideyoshi in 1583 and rebuilt by shoguns in the 1620s, the Castle is one of the few to have survived air raids during World War II.",
+        "song": "Conch",
+        "verses": [
+            {
+                "ref": "Psalm 18:2",
+                "text": "The Lord is my rock and my fortress and my deliverer, my God, my rock, in whom I take refuge, my shield, and the horn of my salvation, my stronghold."
+            },
+            {
+                "ref": "Psalm 27:1-3",
+                "text": "The Lord is my light and my salvation; whom shall I fear? The Lord is the stronghold of my life; of whom shall I be afraid?"
+            }
+        ],
+        "prayer_points": [
+            "Pray that the Japanese would surrender to Jesus and call on God as their deliver and stronghold.",
+            "Ask that Christianity would be a light in Japan and solid doctrine would persevere in the midst of capitalism.",
+            "Pray that believers would trust God to be their rock and shield concerning successes and in relationships as they share Christ."
+        ]
     }
 ]
