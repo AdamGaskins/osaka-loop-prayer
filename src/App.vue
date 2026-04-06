@@ -55,6 +55,12 @@ function goPrevStation() {
 </template>
 
 <style>
+@reference './style.css';
+
+html {
+    @apply bg-gray-200;
+}
+
 html,
 body,
 #app {

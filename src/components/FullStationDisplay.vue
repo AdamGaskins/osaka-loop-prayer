@@ -39,24 +39,26 @@ const prayerColors = ['bg-blue-500', 'bg-green-500', 'bg-red-500']
                         <p>{{ currentStation.description }}</p>
                     </InfoBoard>
 
-                    <div class="mt-4 p-3 bg-white border border-black shadow-xl rounded-sm">
-                        <p class="text-sm leading-4.5 tracking-wider">
-                            {{ currentStation.verses?.[0]?.text }}
-                            <span class="font-bold">{{ currentStation.verses?.[0]?.ref }}</span>
-                        </p>
+                    <div class="px-4">
+                        <div class="text-sm leading-4.5 tracking-wider mt-6">
+                            <p class="font-bold">{{ currentStation.verses?.[0]?.ref }}</p>
+                            <p>{{ currentStation.verses?.[0]?.text }}</p>
+                        </div>
                     </div>
                 </div>
 
-                <YellowButton @click="flipToBack">
-                    <div class="w-full">祈る　Pray</div>
-                    <img :src="ArrowSvg" class="size-10" />
-                </YellowButton>
+                <div class="p-2">
+                    <YellowButton @click="flipToBack">
+                        <div class="w-full">お祈り　Pray</div>
+                        <img :src="ArrowSvg" class="size-10" />
+                    </YellowButton>
+                </div>
 
                 <div class="h-2"></div>
             </div>
-            <div v-else class="side">
+            <div v-else class="side p-2">
                 <div class="h-full overflow-scroll">
-                    <h1 class="font-bold text-xl mb-4 text-center">祈り　Prayer Requests</h1>
+                    <h1 class="font-bold text-xl mb-4 text-center">お祈り　Prayer Requests</h1>
 
                     <InfoBoard v-for="(prayer, i) in currentStation.prayer_points" class="mb-2">
                         <div class="flex">
@@ -71,7 +73,7 @@ const prayerColors = ['bg-blue-500', 'bg-green-500', 'bg-red-500']
 
                 <YellowButton @click="flipToFront">
                     <img :src="ArrowSvg" class="size-10 rotate-180" />
-                    <div class="w-full">ご案内　Info</div>
+                    <div class="w-full">ご案内　Information</div>
                 </YellowButton>
 
                 <div class="h-2"></div>
@@ -84,7 +86,7 @@ const prayerColors = ['bg-blue-500', 'bg-green-500', 'bg-red-500']
 @reference '../style.css';
 
 .side {
-    @apply bg-gray-50 p-2 shadow-xl border-2 rounded-lg border-gray-400;
+    @apply bg-white shadow-lg border-0 rounded-lg border-gray-400;
     height: 100%;
     width: 100%;
     position: absolute;

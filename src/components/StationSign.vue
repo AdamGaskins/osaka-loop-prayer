@@ -15,7 +15,7 @@ defineProps<{
     <PrevNextTransition :reverse="reverseAnimation">
         <div
             :key="stationsStore.stationIndex"
-            class="m-2 border border-black shadow-xl rounded-sm overflow-x-clip bg-white text-black"
+            class="m-2 border border-black shadow-lg rounded-sm overflow-x-clip bg-white text-black"
         >
             <div class="text-center py-2">
                 <Kanji

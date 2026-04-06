@@ -4,12 +4,13 @@ import StationSign from './StationSign.vue'
 import ArrowSvg from '../assets/arrow-right-solid-full.svg'
 import { ref } from 'vue'
 import { useStationsStore } from '@/stores/stations'
+import YellowButton from './YellowButton.vue'
 
 const stationsStore = useStationsStore()
 
 defineProps<{ stations: StationDefinition[] }>()
 
-const chosenStation = ref(false)
+const chosenStation = ref(true)
 const specialStations = ['Kyōbashi', 'Ōsaka', 'Tennōji']
 
 const emit = defineEmits<{
@@ -29,7 +30,7 @@ function close() {
 </script>
 
 <template>
-    <div class="absolute inset-0 bg-gray-100 backdrop-blur-[2px] text-center" @click="close">
+    <div class="absolute inset-0 bg-gray-100 text-center" @click="close">
         <template v-if="!chosenStation">
             <h1 class="leading-12 uppercase text-6xl font-bold mt-12">
                 <div class="mr-0">Pray</div>
@@ -56,13 +57,13 @@ function close() {
             <div class="h-22"></div>
             <StationSign />
 
-            <div class="absolute left-0 right-0 top-35 flex">
+            <div class="absolute left-0 right-0 top-30 flex">
                 <div class="w-full text-center px-4">
                     <div
                         class="size-20 border-4 border-black mx-auto rounded-full animate-(--flash)"
                     ></div>
                     <img :src="ArrowSvg" class="-rotate-90 size-16 mx-auto" />
-                    <div class="text-black font-bold">Previous Station</div>
+                    <div class="text-black font-bold">Next station (Counter-clockwise)</div>
                 </div>
 
                 <div class="w-full text-center px-4">
@@ -70,11 +71,24 @@ function close() {
                         class="size-20 border-4 border-black mx-auto rounded-full animate-(--flash)"
                     ></div>
                     <img :src="ArrowSvg" class="-rotate-90 size-16 mx-auto" />
-                    <div class="text-black font-bold">Next Station</div>
+                    <div class="text-black font-bold">Next station (Clockwise)</div>
                 </div>
             </div>
 
-            <div class="h-64"></div>
+            <div class="absolute bottom-6 right-0 left-0 px-4">
+                <div class="w-full text-center px-4 relative top-16">
+                    <div class="text-black font-bold">View prayer points</div>
+                    <img :src="ArrowSvg" class="rotate-90 size-16 mx-auto" />
+                    <div
+                        class="size-20 border-4 border-black mx-auto rounded-full animate-(--flash)"
+                    ></div>
+                </div>
+
+                <YellowButton>
+                    <div class="w-full">お祈り　Pray</div>
+                    <img :src="ArrowSvg" class="size-10" />
+                </YellowButton>
+            </div>
         </template>
     </div>
 </template>
