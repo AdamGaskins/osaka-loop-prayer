@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-4 bg-black text-white rounded-sm shadow-xl">
+    <div class="bg-black text-white rounded-sm shadow-xl">
         <slot></slot>
     </div>
 </template>
@@ -23,7 +23,7 @@
 }
 
 :deep(p) {
-    @apply leading-4.5 py-2 px-4 tracking-wide;
+    @apply leading-4.5 py-2 px-4 tracking-wider text-sm;
     text-shadow: 0 0 4px rgb(255 255 255 / 1);
 }
 </style>

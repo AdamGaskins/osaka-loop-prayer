@@ -4,6 +4,9 @@ import Map from './Map.vue'
 import stations from './stations.json'
 import Kanji from './Kanji.vue'
 import FullStationDisplay from './components/FullStationDisplay.vue'
+import PrevNextTransition from './components/PrevNextTransition.vue'
+import Tutorial from './components/Tutorial.vue'
+import StationSign from './components/StationSign.vue'
 
 stations.splice(1, stations.length - 1, ...stations.slice(1).reverse())
 
@@ -13,6 +16,14 @@ const currentStation = computed(() => getStation(stationIndex.value)!)
 const peekNext = computed(() => getStation(stationIndex.value + 1)!)
 const peekPrev = computed(() => getStation(stationIndex.value - 1)!)
 
+const reverseAnimation = ref(false)
+const showTutorial = ref(true)
+
+function closeTutorial(index: number) {
+    showTutorial.value = false
+    stationIndex.value = index
+}
+
 function getStation(index: number) {
     while (index >= stations.length) index -= stations.length
     while (index < 0) index += stations.length
@@ -21,52 +32,55 @@ function getStation(index: number) {
 
 function goNextStation() {
     stationIndex.value++
+    reverseAnimation.value = false
 }
 function goPrevStation() {
     stationIndex.value--
+    reverseAnimation.value = true
 }
 </script>
 
 <template>
-    <div class="h-dvh w-full flex flex-col overflow-y-hidden overflow-x-visible">
+    <div class="h-dvh w-full flex flex-col overflow-y-clip overflow-x-visible">
         <div class="relative">
-            <!-- Station Sign -->
-            <div class="m-2 border border-black shadow-xl rounded-sm">
-                <div class="text-center py-2">
-                    <Kanji
-                        kanjiOnly
-                        :kanji="currentStation.name_kanji"
-                        class="text-2xl font-bold"
-                        rubyClass="text-lg"
-                    />
-                    <div class="font-light text-3xl">{{ currentStation.name }}</div>
-                </div>
-                <div class="bg-[#E80000] flex text-white py-1 px-3">
-                    <div class="whitespace-nowrap">&#9664; {{ peekPrev.name }}</div>
-                    <div class="w-full"></div>
-                    <div class="whitespace-nowrap">{{ peekNext.name }} &#9654;</div>
-                </div>
-            </div>
-
             <div class="flex my-4">
                 <Map class="w-full" :currentStation="stationIndex" :stations="stations" />
             </div>
+
+            <!-- Station Sign -->
+            <StationSign
+                :currentStation="currentStation"
+                :stationIndex="stationIndex"
+                :peekNext="peekNext"
+                :peekPrev="peekPrev"
+                :reverseAnimation="reverseAnimation"
+            />
 
             <div class="absolute left-0 top-0 bottom-0 right-1/2" @click="goPrevStation"></div>
             <div class="absolute left-1/2 top-0 bottom-0 right-0" @click="goNextStation"></div>
         </div>
 
         <div class="h-full shrink">
-            <FullStationDisplay :station="currentStation" :key="stationIndex" />
+            <PrevNextTransition :reverse="reverseAnimation">
+                <FullStationDisplay
+                    class="transition-slide"
+                    :station="currentStation"
+                    :key="stationIndex"
+                />
+            </PrevNextTransition>
         </div>
+
+        <div class="h-2 shrink-0"></div>
     </div>
+    <Tutorial v-if="showTutorial" @close="closeTutorial" :stations="stations" />
 </template>
 
 <style>
 html,
 body,
 #app {
-    overflow-y: visible;
-    overflow-x: visible;
+    overflow-y: clip;
+    overflow-x: clip;
+    height: 100%;
 }
 </style>

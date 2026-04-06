@@ -9,14 +9,14 @@ defineProps<{
 
 <template>
     <div class="p-4">
-        <div class="w-full h-10 rounded-[100%] relative">
+        <div class="w-full h-8 rounded-[100%] relative">
             <div
-                class="absolute -top-[10px] -bottom-[10px] -left-[11px] -right-[13px] border-20 rounded-full border-red-500"
+                class="absolute -top-[8px] -bottom-[8px] -left-[8px] -right-[8px] border-16 rounded-full border-osaka-red"
             ></div>
             <div class="w-full h-full">
                 <!-- station icons -->
                 <div
-                    class="map-icon size-3.5 rounded-full bg-white"
+                    class="map-icon size-3 rounded-full bg-white"
                     v-for="(station, i) of stations"
                     :style="{ '--p': i / stations.length }"
                 ></div>
@@ -90,7 +90,7 @@ defineProps<{
 .map-icon {
     display: inline-block;
     offset-path: rect(0% 100% 100% 0% round 11%);
-    offset-distance: calc(100% * var(--p) + 35%);
+    offset-distance: calc(100% * var(--p) + 30%);
     offset-rotate: 0deg;
     offset-anchor: center;
 }
