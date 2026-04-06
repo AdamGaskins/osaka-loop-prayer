@@ -3,26 +3,34 @@ import type { StationDefinition } from '@/types'
 import StationSign from './StationSign.vue'
 import ArrowSvg from '../assets/arrow-right-solid-full.svg'
 import { ref } from 'vue'
+import { useStationsStore } from '@/stores/stations'
+
+const stationsStore = useStationsStore()
 
 defineProps<{ stations: StationDefinition[] }>()
 
-const startingStation = ref<number | null>(null)
+const chosenStation = ref(false)
 const specialStations = ['Kyōbashi', 'Ōsaka', 'Tennōji']
 
 const emit = defineEmits<{
-    (e: 'close', startingStation: number): void
+    (e: 'close'): void
 }>()
 
-function close() {
-    if (startingStation.value === null) return
+function chooseStation(i: number) {
+    stationsStore.stationIndex = i
+    chosenStation.value = true
+}
 
-    emit('close', startingStation.value)
+function close() {
+    if (!chosenStation.value) return
+
+    emit('close')
 }
 </script>
 
 <template>
     <div class="absolute inset-0 bg-gray-100 backdrop-blur-[2px] text-center" @click="close">
-        <template v-if="startingStation === null">
+        <template v-if="!chosenStation">
             <h1 class="leading-12 uppercase text-6xl font-bold mt-12">
                 <div class="mr-0">Pray</div>
                 <div class="text-osaka-red">Osaka</div>
@@ -34,7 +42,7 @@ function close() {
             <div class="grid grid-cols-3 ring-red-600 gap-x-2 gap-y-2 p-2">
                 <button
                     v-for="(station, i) of stations"
-                    @click.stop.prevent="startingStation = i"
+                    @click.stop.prevent="chooseStation(i)"
                     class="bg-white border border-gray-100 text-sm rounded-lg py-2 shadow-lg"
                     :class="{
                         'border-black! font-bold': specialStations.includes(station.name),
@@ -46,21 +54,21 @@ function close() {
         </template>
         <template v-else>
             <div class="h-22"></div>
-            <StationSign
-                :currentStation="stations[0]!"
-                :peekNext="stations[1]!"
-                :peekPrev="stations[stations.length - 1]!"
-            />
+            <StationSign />
 
             <div class="absolute left-0 right-0 top-35 flex">
-                <div class="w-full text-center px-4 animate-(--flash)">
-                    <div class="size-20 border-4 border-black mx-auto rounded-full"></div>
+                <div class="w-full text-center px-4">
+                    <div
+                        class="size-20 border-4 border-black mx-auto rounded-full animate-(--flash)"
+                    ></div>
                     <img :src="ArrowSvg" class="-rotate-90 size-16 mx-auto" />
                     <div class="text-black font-bold">Previous Station</div>
                 </div>
 
-                <div class="w-full text-center px-4 animate-(--flash)">
-                    <div class="size-20 border-4 border-black mx-auto rounded-full"></div>
+                <div class="w-full text-center px-4">
+                    <div
+                        class="size-20 border-4 border-black mx-auto rounded-full animate-(--flash)"
+                    ></div>
                     <img :src="ArrowSvg" class="-rotate-90 size-16 mx-auto" />
                     <div class="text-black font-bold">Next Station</div>
                 </div>
@@ -73,7 +81,7 @@ function close() {
 
 <style>
 :root {
-    --flash: flash 1.5s ease-in-out infinite;
+    --flash: flash 0.75s ease-in-out infinite;
 }
 
 @keyframes flash {

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { StationDefinition } from './types'
+import { storeToRefs } from 'pinia'
+import { useStationsStore } from './stores/stations'
 
-defineProps<{
-    stations: StationDefinition[]
-    currentStation: number
-}>()
+const stationsStore = useStationsStore()
+
+const { stations, visitedStations, stationIndex } = storeToRefs(stationsStore)
 </script>
 
 <template>
@@ -19,19 +19,24 @@ defineProps<{
                     class="map-icon size-3 rounded-full bg-white"
                     v-for="(station, i) of stations"
                     :style="{ '--p': i / stations.length }"
-                ></div>
+                >
+                    <div
+                        v-if="visitedStations.indexOf(i) !== -1"
+                        class="size-2 m-0.5 rounded-full bg-osaka-red"
+                    ></div>
+                </div>
 
                 <!-- train -->
                 <div
                     class="map-icon size-9 transition-[offset-distance] duration-[1500ms]"
-                    :style="{ '--p': currentStation / stations.length }"
+                    :style="{ '--p': stationIndex / stations.length }"
                 >
                     <span class="text-4xl absolute -top-2.5"> 🚃 </span>
                 </div>
 
                 <!-- <div -->
                 <!--     class="map-icon size-9 transition-[offset-distance] duration-[1500ms]" -->
-                <!--     :style="{ '--p': currentStation / stations.length, 'offset-rotate': 'auto' }" -->
+                <!--     :style="{ '--p': stationIndex / stations.length, 'offset-rotate': 'auto' }" -->
                 <!-- > -->
                 <!--     <div class="train-parent size-9"> -->
                 <!--         <div class="train-model"> -->

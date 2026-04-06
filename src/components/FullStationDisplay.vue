@@ -4,15 +4,18 @@ import ArrowSvg from '../assets/arrow-right-solid-full.svg'
 import type { StationDefinition } from '@/types'
 import { nextTick, ref } from 'vue'
 import YellowButton from './YellowButton.vue'
+import { useStationsStore } from '@/stores/stations'
+import { storeToRefs } from 'pinia'
 
-defineProps<{
-    station: StationDefinition
-}>()
+const stationsStore = useStationsStore()
+
+const { currentStation } = storeToRefs(stationsStore)
 
 const viewingFront = ref(true)
 const flipAnimation = ref(false)
 
 function flipToBack() {
+    stationsStore.markAsVisited()
     flipAnimation.value = false
     viewingFront.value = false
 }
@@ -33,13 +36,13 @@ const prayerColors = ['bg-blue-500', 'bg-green-500', 'bg-red-500']
                     <!-- Information -->
                     <InfoBoard>
                         <h1>ご案内　<small>Information</small></h1>
-                        <p>{{ station.description }}</p>
+                        <p>{{ currentStation.description }}</p>
                     </InfoBoard>
 
                     <div class="mt-4 p-3 bg-white border border-black shadow-xl rounded-sm">
                         <p class="text-sm leading-4.5 tracking-wider">
-                            {{ station.verses?.[0]?.text }}
-                            <span class="font-bold">{{ station.verses?.[0]?.ref }}</span>
+                            {{ currentStation.verses?.[0]?.text }}
+                            <span class="font-bold">{{ currentStation.verses?.[0]?.ref }}</span>
                         </p>
                     </div>
                 </div>
@@ -55,7 +58,7 @@ const prayerColors = ['bg-blue-500', 'bg-green-500', 'bg-red-500']
                 <div class="h-full overflow-scroll">
                     <h1 class="font-bold text-xl mb-4 text-center">祈り　Prayer Requests</h1>
 
-                    <InfoBoard v-for="(prayer, i) in station.prayer_points" class="mb-2">
+                    <InfoBoard v-for="(prayer, i) in currentStation.prayer_points" class="mb-2">
                         <div class="flex">
                             <div class="text-6xl font-extralight pl-3 text-center w-16 shrink-0">
                                 {{ i + 1 }}
