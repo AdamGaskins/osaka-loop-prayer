@@ -10,6 +10,7 @@ export const useStationsStore = defineStore('stations', () => {
     const stationIndex = ref(0)
     const visitedStations = ref<number[]>([])
 
+    const normalizedIndex = computed(() => normalizeIndex(stationIndex.value))
     const currentStation = computed(() => getStation(stationIndex.value)!)
     const peekNext = computed(() => getStation(stationIndex.value + 1)!)
     const peekPrev = computed(() => getStation(stationIndex.value - 1)!)
@@ -34,6 +35,7 @@ export const useStationsStore = defineStore('stations', () => {
     return {
         stations,
         stationIndex,
+        normalizedIndex,
         visitedStations,
         currentStation,
         peekNext,
