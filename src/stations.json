@@ -44,7 +44,7 @@
     {
         "name": "Tenma",
         "name_kanji": "天[てん]満[ま]",
-        "description": "The Tenma area is home to the longest shopping street in Japan, over 1.5 miles. This area began to Aourish due to the nearby Shinto shrine where people came to worship the god of studies. A festival is held each July with fireworks and parades along the street and river.",
+        "description": "The Tenma area is home to the longest shopping street in Japan, over 1.5 miles. This area began to flourish due to the nearby Shinto shrine where people came to worship the god of studies. A festival is held each July with fireworks and parades along the street and river.",
         "song": "Fireworks",
         "verses": [
             {
@@ -61,240 +61,287 @@
     {
         "name": "Ōsaka",
         "name_kanji": "大[おお]阪[さか]",
-        "description": "",
-        "song": "",
+        "description": "Osaka Station is largest station in the city, housing a total of 5 train lines not to mention the subway lines. Over 500,000 people pass through the station each day.",
+        "song": "I Really Like it Here",
         "verses": [
             {
-                "ref": "",
-                "text": ""
+                "ref": "Matthew 9:37-38",
+                "text": "Then he said, \"The harvest is plentiful, but the laborers are few; therefore pray earnestly to the Lord of the harvest to send out laborers into his harvest.\""
             },
             {
-                "ref": "",
-                "text": ""
+                "ref": "Matthew 9:36",
+                "text": "When he saw the crowds, he had compassion on them, because they were harassed and helpless, like sheep without a shepherd."
             }
         ],
-        "prayer_points": ["", "", ""]
+        "prayer_points": [
+            "Pray for more missionaries, national pastors and Christians to surrender and be obedient to the call of reaching the Japanese.",
+            "Pray that God would give those wor ers t e same compassion and love as Christ.",
+            "Ask that God would bring a great harvest to Japan."
+        ]
     },
     {
         "name": "Fukushima",
         "name_kanji": "福[ふく]島[しま]",
-        "description": "",
-        "song": "",
+        "description": "Outside of Japan, the name Fukushima brings to mind natural and nuclear disasters. While it is true that Japan is prone to natural disasters, for the Japanese, Fukushima is a familiar company name and surname.",
+        "song": "Dream Flower",
         "verses": [
             {
-                "ref": "",
-                "text": ""
+                "ref": "Psalm 46:1-3",
+                "text": "God is our refuge and strength, an ever-present help in trouble. Therefore we will not fear, though the earth give way and the mountains fall into the heart of the sea, though its waters roar and foam and the mountains quake with their surging."
             },
             {
-                "ref": "",
-                "text": ""
+                "ref": "John 14:27",
+                "text": "Peace I leave with you; my peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid."
             }
         ],
-        "prayer_points": ["", "", ""]
+        "prayer_points": [
+            "Pray for the Japanese who have experienced tragedy and disaster, that they would find hope in Christ.",
+            "Pray that God would cultivate a culture in Japan defined by His grace and love rather expectations of perfection.",
+            "Ask that the Holy Spirit would give the Japanese Christians a bold spirit full of hope and peace."
+        ]
     },
     {
         "name": "Noda",
         "name_kanji": "野[の]田[だ]",
-        "description": "",
-        "song": "",
+        "description": "The majority of Osaka's food supply comes through Osaka's Central Wholesale Market. In fact each morning at 4: 15 am the market holds a special auction for the freshest tuna. Unlike most retail businesses, Osaka's Central market is closed on Sundays.",
+        "song": "Russian Folk Song",
         "verses": [
             {
-                "ref": "",
-                "text": ""
-            },
-            {
-                "ref": "",
-                "text": ""
+                "ref": "Mark 8:35-36",
+                "text": "For whoever would save his life will lose it, but whoever loses his life for my sake and the gospel's will save it. For what does it profit a man to gain the whole world and forfeit his soul?"
             }
         ],
-        "prayer_points": ["", "", ""]
+        "prayer_points": [
+            "Pray for more businesses to be Aexible concerning their employees so that they can attend church.",
+            "Just as Jesus used fish and food to reach many, ask that He would use the area of Noda and God's creation to reach many for His Kingdom.",
+            "Nearby \"Hell Valley\" is known for its bars and night spots. Pray that Japan would turn to Jesus rather than alcohol."
+        ]
     },
     {
         "name": "Nishikujō",
         "name_kanji": "西[にし]九[く]条[じょう]",
-        "description": "",
-        "song": "",
+        "description": "Nishi-Kujo is the nearest station to the Japan Rail West training facility, employing over 47,000 Japanese. Many also transfer here for the popular theme park, Universal Studios Japan.",
+        "song": "American Patrol",
         "verses": [
             {
-                "ref": "",
-                "text": ""
-            },
-            {
-                "ref": "",
-                "text": ""
+                "ref": "Psalm 139:14-15",
+                "text": "I praise you, for I am fearfully and wonderfully made. Wonderful are your works; my soul knows it very well. My frame was not hidden from you, when I was being made in secret, intricately woven in the depths of the earth."
             }
         ],
-        "prayer_points": ["", "", ""]
+        "prayer_points": [
+            "Intercede for the Japanese as they use amusement and other sources of \"fun\" to numb the pain in their lives.",
+            "Pray for the Gospel to work among the train drivers, mechanics, security and crews. Pray for their safety.",
+            "Ask that God would rescue His creations, fearfully and wonderfully made, who are contemplating suicide, specifically involving Japan's railways."
+        ]
     },
     {
         "name": "Bentenchō",
         "name_kanji": "弁[べん]天[てん]町[ちょう]",
-        "description": "",
-        "song": "",
+        "description": "The smallest of the stations along the loop line, and the closest to Osaka Bay. This small area seemingly has only one purpose: to connect the Osaka Loop Line to the Chuo Subway Line.",
+        "song": "I've been workin' on the railroad",
         "verses": [
             {
-                "ref": "",
-                "text": ""
+                "ref": "John 6:51",
+                "text": "I am the living bread that came down from heaven. If anyone eats of this bread, he will live forever. And the bread that I will give for the life of the world is my flesh."
             },
             {
-                "ref": "",
-                "text": ""
+                "ref": "Luke 12:33",
+                "text": "Sell your possessions, and give to the needy. Provide yourselves with moneybags that do not grow old, with a treasure in the heavens that does not fail, where no thief approaches and no moth destroys."
             }
         ],
-        "prayer_points": ["", "", ""]
+        "prayer_points": [
+            "Pray that as missionaries daily travel God would connect them to individuals who will help them to be included in culture.",
+            "Pray that Christians would encounter \"persons of peace\" who are open to talk about the Gospel.",
+            "Ask that pastors in Japan would work with missionaries in sound discipleship and evangelism."
+        ]
     },
     {
         "name": "Taishō",
         "name_kanji": "大[たい]正[しょう]",
-        "description": "",
-        "song": "",
+        "description": "The Taisho area is named after the former Taisho Emperor and era in which Japan became a democratic society. This area is also home to many people from Okinawa. The Osaka Dome home to Orix Buffalo baseball is also located here.",
+        "song": "Okinawa Folk Song",
         "verses": [
             {
-                "ref": "",
-                "text": ""
+                "ref": "John 10:10",
+                "text": "The thief comes only to steal and kill and destroy. I came that they may have life and have it abundantly."
             },
             {
-                "ref": "",
-                "text": ""
+                "ref": "Ephesians 3:20",
+                "text": "To him who is able to do far more abundantly than all that we ask or think, according to the power at work within us."
             }
         ],
-        "prayer_points": ["", "", ""]
+        "prayer_points": [
+            "Pray for the Gospel to be shared and churches to be planted among the Japanese who are from Okinawa.",
+            "Ask that God would bring salvation to Japan so greatly that the Osaka Dome could be filled with thousands worshipping His name.",
+            "Historically, Japan has been attracted to western culture. Pray that they would be taken by the idea of a relationship with God and desire abundant life in Him."
+        ]
     },
     {
         "name": "Ashiharabashi",
         "name_kanji": "芦[あし]原[はら]橋[ばし]",
-        "description": "",
-        "song": "",
+        "description": "Ashiharabashi is known for its famous landmarks in nearby Namba but also for many long established drum makers. Unfortunately, rythmic music has a long tradition within Japan's pagan festivals.",
+        "song": "Festival",
         "verses": [
             {
-                "ref": "",
-                "text": ""
+                "ref": "Psalm 150:5-6",
+                "text": "Praise him with sounding cymbals; praise him with loud clashing cymbals! Let everything that has breath praise the Lord! Praise the Lord!"
             },
             {
-                "ref": "",
-                "text": ""
+                "ref": "2 Corinthians 5:20",
+                "text": "Therefore, we are ambassadors for Christ, God making his appeal through us. We implore you on behalf of Christ, be reconciled to God."
             }
         ],
-        "prayer_points": ["", "", ""]
+        "prayer_points": [
+            "Pray that Japanese churches would have an evangelistic heart for their own nation and for those who come as tourists to Osaka.",
+            "Ask that God would break the strongholds of Buddhism and Shinto and that the festivals could be used for His purposes.",
+            "Pray that the sound of drums in Japan will one day be used to praise the risen Lord."
+        ]
     },
     {
         "name": "Imamiya",
         "name_kanji": "今[いま]宮[みや]",
-        "description": "",
-        "song": "",
+        "description": "Shinto, the native religion of Japan, considers anything related to death as unclean and repugnant. Since the people of Imamiya, \"leather city\" were known for crafting leather goods, they also were considered lowly and unclean.",
+        "song": "God of Great Darkness and Fortune",
         "verses": [
             {
-                "ref": "",
-                "text": ""
+                "ref": "1 John 1:9",
+                "text": "If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness."
             },
             {
-                "ref": "",
-                "text": ""
+                "ref": "Isaiah 61:1",
+                "text": "He has sent me to bind up the brokenhearted, to proclaim liberty to the captives, and the opening of the prison to those who are bound;"
             }
         ],
-        "prayer_points": ["", "", ""]
+        "prayer_points": [
+            "Ask the one true living God to show the Japanese that they can be made clean through His son Jesus.",
+            "While a classed based society no longer exists in Japan, many still are trapped in the cycles of poverty & hopelessness. Pray for all Japanese to be set free by the liberty found only in Jesus.",
+            "Pray that Japanese people would realize the lack of power of the \"gods\" as they pray and visit shrines and would search something greater."
+        ]
     },
     {
         "name": "Shin-Imamiya",
         "name_kanji": "新[しん]今[いま]宮[みや]",
-        "description": "",
-        "song": "",
+        "description": "This area is sadly \"home\" to many homeless, outcasts and victims of cultural pressures. Each year, Imamiya Ebisu Shrine hosts a festival in which Osakans pray to the gods of business and prosperity.",
+        "song": "New World",
         "verses": [
             {
-                "ref": "",
-                "text": ""
+                "ref": "John 6:51",
+                "text": "I am the living bread that came down from heaven. If anyone eats of this bread, he will live forever."
             },
             {
-                "ref": "",
-                "text": ""
+                "ref": "Luke 12:33",
+                "text": "Sell your possessions, and give to the needy. Provide yourselves with moneybags that do not grow old, with a treasure in the heavens that does not fail, where no thief approaches and no moth destroys."
             }
         ],
-        "prayer_points": ["", "", ""]
+        "prayer_points": [
+            "Pray for the homeless, hungry and outcast of Japan to be satisifed through the living bread of Christ.",
+            "Pray that God would cultivate a \"new world\" in the culture of Japan defined by His grace and love rather than society's expectations.",
+            "Ask that Japanese Christians would become more willing to reach out to those on the outskirts to share the love of Christ."
+        ]
     },
     {
         "name": "Tennōji",
         "name_kanji": "天[てん]王[おう]寺[じ]",
-        "description": "",
-        "song": "",
+        "description": "Tennoji is home to Abeno Harukas, one of the tallest buildings in Japan. Shitennoji Temple is also located nearby, know for the bells which are rung throughout the temple grounds. Numbered tickets are often given for entry due to the crowds.",
+        "song": "Are You to Ring that Bell",
         "verses": [
             {
-                "ref": "",
-                "text": ""
+                "ref": "Mark 4:19-20",
+                "text": "But the cares of the world and the deceitfulness of riches and the desires for other things enter in and choke the word, and it proves unfruitful. But those that were sown on the good soil are the ones who hear the word and accept it and bear fruit."
             },
             {
-                "ref": "",
-                "text": ""
+                "ref": "Philippians 1:27",
+                "text": "I may hear of you that you are standing firm in one spirit, with one mind striving side by side for the faith of the gospel."
             }
         ],
-        "prayer_points": ["", "", ""]
+        "prayer_points": [
+            "Among all of the aesthetically pleasing buildings and urban shine, pray that the seeds of the Gospel would not get choked out by the thorns of life.",
+            "Pray that the truth of the Bible would be something all Japanese people long to hear and learn about.",
+            "Ask that the churches near Tennoji would be faithful to sow the seeds of the Gospel in truth and love."
+        ]
     },
     {
         "name": "Teradachō",
         "name_kanji": "寺[てら]田[だ]町[ちょう]",
-        "description": "",
-        "song": "",
+        "description": "Teradacho is often used to avoid the larger crowds at Tennoji station. Teradacho used to be the last station on this train line, before the line was bought and merged with other lines to form the Osaka Loop.",
+        "song": "Life Goes On",
         "verses": [
             {
-                "ref": "",
-                "text": ""
+                "ref": "Ephesians 3:17-18",
+                "text": "So that Christ may dwell in your hearts through faith—that you, being rooted and grounded in love, may have strength to comprehend with all the saints what is the breadth and length and height and depth, and to know the love of Christ that surpasses knowledge."
             },
             {
-                "ref": "",
-                "text": ""
+                "ref": "John 15:5",
+                "text": "I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing."
             }
         ],
-        "prayer_points": ["", "", ""]
+        "prayer_points": [
+            "Pray that the \"loop\" of Buddhism or Shinto would be cut, and a new \"line\" in Japan would rise up as bold Christians within their families and culture.",
+            "Many Japanese believers feel that reaching their fellow Japanese with the gospel is too difficult, even impossible. Pray that they would trust in God's plan and be faithful in sharing the gospel."
+        ]
     },
     {
         "name": "Momodani",
         "name_kanji": "桃[もも]谷[だに]",
-        "description": "",
-        "song": "",
+        "description": "Momodani's neighborhood strongly retains the charming Osaka scenery of olden days. Home to coffeehouses, penny candy shops and used book stores, this neighborhood has an atmosphere of warmth and community.",
+        "song": "Sake, Tears, Men & Women",
         "verses": [
             {
-                "ref": "",
-                "text": ""
+                "ref": "1 Corinthians 12:12",
+                "text": "For just as the body is one and has many members, and all the members of the body, though many, are one body, so it is with Christ."
             },
             {
-                "ref": "",
-                "text": ""
+                "ref": "John 13:35",
+                "text": "By this all people will know that you are my disciples, if you have love for one another."
             }
         ],
-        "prayer_points": ["", "", ""]
+        "prayer_points": [
+            "Pray for warmth and a sense of community to be found in existing Japanese churches.",
+            "Pray for the truth of God's Word to inspire healthy cultural changes within the old traditions of Japan.",
+            "Pray for Believers both Japanese and missionaries as they work to show the love of Jesus to others."
+        ]
     },
     {
         "name": "Tsuruhashi",
         "name_kanji": "鶴[つる]橋[はし]",
-        "description": "",
-        "song": "",
+        "description": "Tsuruhashi is the center of Osaka's Korea Town, well-known for its many Korean restaurants and shops. The aroma of delicious food can be enjoyed even from inside the station. This area, though not too far from Japan's largest \"slum,\" is a reflection of a different era.",
+        "song": "All You Can Eat Yodel",
         "verses": [
             {
-                "ref": "",
-                "text": ""
+                "ref": "2 Corinthians 2:14-16",
+                "text": "Through us spreads the fragrance of the knowledge of him everywhere. For we are the aroma of Christ to God among those who are being saved and among those who are perishing, to one a fragrance from death to death, to the other a fragrance from life to life."
             },
             {
-                "ref": "",
-                "text": ""
+                "ref": "John 6:35",
+                "text": "Jesus said to them, \"I am the bread of life; whoever comes to me shall not hunger, and whoever believes in me shall never thirst.\""
             }
         ],
-        "prayer_points": ["", "", ""]
+        "prayer_points": [
+            "Pray that the Gospel will be pleasant and appealing to all those who hear.",
+            "Pray that as Jesus is shared, the Holy Spirit would work in the hearts and minds of the Japanese to feel His peace and hope.",
+            "Pray for a sweet fragrance of salvation and worship from the Japanese to rise up to God rather than incense and idolatry."
+        ]
     },
     {
         "name": "Tamatsukuri",
         "name_kanji": "玉[たま]造[つくり]",
-        "description": "",
-        "song": "",
+        "description": "Tamatsukuri station is close to the famous Inari Shrine. The shrine, tracing to 12BC, was dedicated to the Shinto god Inari in hopes that he would protect the Osaka Castle.",
+        "song": "Mary Had a Little Lamb",
         "verses": [
             {
-                "ref": "",
-                "text": ""
+                "ref": "Psalm 78:4",
+                "text": "We will not hide them from their children, but tell to the coming generation the glorious deeds of the Lord, and his might, and the wonders that he has done."
             },
             {
-                "ref": "",
-                "text": ""
+                "ref": "Psalm 115:4,8",
+                "text": "Their idols are silver and gold, the work of human hands. ... Those who make them become like them; so do all who trust in them."
             }
         ],
-        "prayer_points": ["", "", ""]
+        "prayer_points": [
+            "Pray the Japanese would see the emptiness of their idol worship and traditions and turn to the one true God.",
+            "Pray the children in Japan would all have early exposure to the gospel and rise up to be a strong generation of believers.",
+            "Pray for Japanese Christian parents to intentionally teach the glorious deeds of the Lord to their children."
+        ]
     },
     {
         "name": "Morinomiya",

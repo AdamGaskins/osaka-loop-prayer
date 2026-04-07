@@ -10,7 +10,7 @@ const stationsStore = useStationsStore()
 
 defineProps<{ stations: StationDefinition[] }>()
 
-const chosenStation = ref(true)
+const chosenStation = ref(false)
 const specialStations = ['Kyōbashi', 'Ōsaka', 'Tennōji']
 
 const emit = defineEmits<{

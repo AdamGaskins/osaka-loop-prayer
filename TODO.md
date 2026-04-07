@@ -1,4 +1,7 @@
-- Fill out information
+CONTENT:
+
+- Update Fukushima
+- Update Tamatsukuri
 
 EXTRA POLISH:
 
@@ -8,6 +11,7 @@ EXTRA POLISH:
 
 DONE:
 
+- Fill out information
 - Add dots to visited stations
 - Check even with tiny phone sizes (good enough for now)
 - Add tap to begin to tutorial screen
