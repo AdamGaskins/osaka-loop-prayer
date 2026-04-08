@@ -49,14 +49,14 @@ function initScene() {
     parentEl.value!.appendChild(renderer.domElement)
 
     // Cube
-    const geometry = new THREE.BoxGeometry(0.5, 0.5, 1.25)
+    const geometry = new THREE.BoxGeometry(0.7, 0.7, 1.25)
     const material = new THREE.MeshLambertMaterial({
         color: 0xffffff,
     })
     const cube = new THREE.Mesh(geometry, material)
     scene.add(cube)
 
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.8)
+    const ambientLight = new THREE.AmbientLight(0xffffff, 1)
     scene.add(ambientLight)
 
     const dirLight = new THREE.DirectionalLight(0xffffff, 2)
