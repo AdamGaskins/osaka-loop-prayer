@@ -1,17 +1,7 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
 import { useStationsStore } from './stores/stations'
-import Train from './components/Train.vue'
-import {
-    computed,
-    nextTick,
-    onMounted,
-    onUnmounted,
-    reactive,
-    ref,
-    useTemplateRef,
-    watch,
-} from 'vue'
+import { onMounted, onUnmounted, reactive, ref, useTemplateRef, watch } from 'vue'
 import gsap from 'gsap'
 
 const stationsStore = useStationsStore()
@@ -33,8 +23,10 @@ const tweenedTrainRotation = ref<number>(0)
 
 let tween: GSAPTween | null = null
 watch(stationIndex, (i) => {
-    if (tween) tween.kill()
-    tween = gsap.to(tweened, { stationIndex: i, duration: 1.5, ease: 'sine.inOut' })
+    if (tween) {
+        tween.kill()
+    }
+    tween = gsap.to(tweened, { stationIndex: i, duration: 1, ease: 'sine.inOut' })
 })
 
 function updateTrainPoint() {
@@ -112,8 +104,6 @@ onUnmounted(() => {
 
             <div class="w-full h-full">
                 <!-- station icons -->
-                <!-- class="map-icon size-3 rounded-full bg-white" -->
-                <!-- :style="{ '--p': i / stations.length }" -->
                 <div
                     class="size-3 bg-white rounded-full absolute -top-1.5 -left-1.5"
                     :style="{
@@ -129,7 +119,7 @@ onUnmounted(() => {
 
                 <!-- train -->
                 <div
-                    class="size-16 absolute -top-9.5 -left-8"
+                    class="absolute -top-8 -left-4.5 size-9 text-4xl"
                     :style="{
                         transform:
                             'translate(' +
@@ -137,74 +127,40 @@ onUnmounted(() => {
                             'px, ' +
                             tweenedTrainPoint.y +
                             'px)',
+                        offsetRotate: 'none',
                     }"
                 >
-                    <Train :rotation="tweenedTrainRotation" />
+                    <div class="animate-[bumpy_1s_linear_infinite] absolute emoji-shadow">🚃</div>
                 </div>
-
-                <!-- <div -->
-                <!--     class="map-icon size-9 transition-[offset-distance] duration-[1500ms]" -->
-                <!--     :style="{ '--p': stationIndex / stations.length, 'offset-rotate': 'auto' }" -->
-                <!-- > -->
-                <!--     <div class="train-parent size-9"> -->
-                <!--         <div class="train-model"> -->
-                <!--             <div></div> -->
-                <!--         </div> -->
-                <!--     </div> -->
-                <!-- </div> -->
             </div>
         </div>
     </div>
 </template>
 
-<style scoped>
-.train-parent {
-    transform-style: preserve-3d;
-    perspective: 1000px;
-    perspective-origin: center center;
-    offset-rotate: auto !important;
+<style>
+.emoji-shadow {
+    --shadow-color: #fff;
+    text-shadow:
+        -1px 0 var(--shadow-color),
+        0 1px var(--shadow-color),
+        1px 0 var(--shadow-color),
+        0 -1px var(--shadow-color),
+        -1px -1px var(--shadow-color),
+        1px -1px var(--shadow-color),
+        -1px 1px var(--shadow-color),
+        1px 1px var(--shadow-color),
+        0px 2px 8px rgb(0 0 0 / 0.5);
 }
 
-.train-model,
-.train-model::before,
-.train-model::after,
-.train-model div,
-.train-model div::before,
-.train-model div::after {
-    background-color: grey;
-    width: 100%;
-    height: 100%;
-}
+@keyframes bumpy {
+    0%,
+    45% {
+        transform: translateY(0);
+    }
 
-.train-model {
-    transform-origin: center center;
-}
-.train-model::before {
-    transform-origin: top center;
-    rotate: x 90deg;
-}
-.train-model::after {
-    transform-origin: center left;
-    rotate: y -90deg;
-}
-.train-model::after {
-    transform-origin: center left;
-    rotate: y -90deg;
-}
-.train-model div::before {
-    transform-origin: bottom center;
-    rotate: x 90deg;
-}
-.train-model div::after {
-    transform-origin: left center;
-    rotate: y 90deg;
-}
-
-.map-icon {
-    display: inline-block;
-    offset-path: rect(0% 100% 100% 0% round 11%);
-    offset-distance: calc(100% * var(--p) + 30%);
-    offset-rotate: 0deg;
-    offset-anchor: center;
+    50%,
+    95% {
+        transform: translateY(-1px);
+    }
 }
 </style>

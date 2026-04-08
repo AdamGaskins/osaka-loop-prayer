@@ -32,7 +32,7 @@ function goPrevStation() {
 <template>
     <div class="h-dvh w-full flex flex-col overflow-y-clip overflow-x-visible">
         <div class="relative">
-            <div class="flex my-4">
+            <div class="flex my-4 safe-top">
                 <Map class="w-full" />
             </div>
 
@@ -49,13 +49,26 @@ function goPrevStation() {
             </PrevNextTransition>
         </div>
 
-        <div class="h-2 shrink-0"></div>
+        <div class="h-4 shrink-0"></div>
     </div>
     <Tutorial v-if="showTutorial" @close="closeTutorial" :stations="stations" />
 </template>
 
 <style>
 @reference './style.css';
+
+.safe-padding-top {
+    padding-top: env(safe-area-inset-top);
+}
+.safe-padding-bottom {
+    padding-top: env(safe-area-inset-bottom);
+}
+.safe-padding-left {
+    padding-top: env(safe-area-inset-left);
+}
+.safe-padding-right {
+    padding-top: env(safe-area-inset-right);
+}
 
 html {
     @apply bg-gray-200;

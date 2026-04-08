@@ -2,8 +2,10 @@ CONTENT:
 
 - Update Fukushima
 - Update Tamatsukuri
-- Add departure melody
-- Update dot placement logic to use SVG (more accurate and symmetrical)
+
+TODO:
+
+- Add PDF generation/download for offline usage
 
 EXTRA POLISH:
 
@@ -19,3 +21,5 @@ DONE:
 - Check even with tiny phone sizes (good enough for now)
 - Add tap to begin to tutorial screen
 - Add tutorial screen
+- Add departure melody
+- Update dot placement logic to use SVG (more accurate and symmetrical)

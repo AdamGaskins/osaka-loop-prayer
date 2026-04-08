@@ -29,7 +29,7 @@ const prayerColors = ['bg-blue-500', 'bg-green-500', 'bg-red-500']
 </script>
 
 <template>
-    <div class="relative h-full mx-2">
+    <div class="relative h-full mx-2 safe-padding-bottom">
         <Transition :name="flipAnimation ? 'slide-side-flipped' : 'slide-side'" mode="out-in">
             <div v-if="viewingFront" class="side">
                 <div class="h-full overflow-scroll">
@@ -43,6 +43,9 @@ const prayerColors = ['bg-blue-500', 'bg-green-500', 'bg-red-500']
                         <div class="text-sm leading-4.5 tracking-wider mt-6">
                             <p class="font-bold">{{ currentStation.verses?.[0]?.ref }}</p>
                             <p>{{ currentStation.verses?.[0]?.text }}</p>
+
+                            <p class="font-bold mt-6">Departure Melody</p>
+                            <p>🎶 {{ currentStation.song }} 🎶</p>
                         </div>
                     </div>
                 </div>
@@ -53,8 +56,6 @@ const prayerColors = ['bg-blue-500', 'bg-green-500', 'bg-red-500']
                         <img :src="ArrowSvg" class="size-10" />
                     </YellowButton>
                 </div>
-
-                <div class="h-2"></div>
             </div>
             <div v-else class="side p-2">
                 <div class="h-full overflow-scroll">
@@ -75,8 +76,6 @@ const prayerColors = ['bg-blue-500', 'bg-green-500', 'bg-red-500']
                     <img :src="ArrowSvg" class="size-10 rotate-180" />
                     <div class="w-full">ご案内　Information</div>
                 </YellowButton>
-
-                <div class="h-2"></div>
             </div>
         </Transition>
     </div>
