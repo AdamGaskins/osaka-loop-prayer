@@ -73,7 +73,7 @@ function close() {
                 </div>
             </div>
 
-            <div class="absolute bottom-4 right-0 left-0 px-4 safe-padding-bottom">
+            <div class="absolute bottom-6 right-0 left-0 px-4 safe-padding-bottom">
                 <div class="w-full text-center px-4 relative top-16">
                     <div class="text-black font-bold">View prayer points</div>
                     <img :src="ArrowSvg" class="rotate-90 size-16 mx-auto" />
