@@ -49,18 +49,31 @@ function initScene() {
     parentEl.value!.appendChild(renderer.domElement)
 
     // Cube
+    const textureLoader = new THREE.TextureLoader()
+    const tex = (path: string) =>
+        new THREE.MeshStandardMaterial({ map: textureLoader.load('./' + path) })
+    const cubeTex = [
+        tex('trainside.png'),
+        tex('trainside.png'),
+        tex('traintop.png'),
+        tex('traintop.png'),
+        tex('trainfront.png'),
+        tex('trainfront.png'),
+    ]
+
     const geometry = new THREE.BoxGeometry(0.7, 0.7, 1.25)
-    const material = new THREE.MeshLambertMaterial({
-        color: 0xffffff,
-    })
-    const cube = new THREE.Mesh(geometry, material)
+    // const material = new THREE.MeshLambertMaterial({
+    //     color: 0xffffff,
+    //
+    // })
+    const cube = new THREE.Mesh(geometry, cubeTex)
     scene.add(cube)
 
     const ambientLight = new THREE.AmbientLight(0xffffff, 1)
     scene.add(ambientLight)
 
     const dirLight = new THREE.DirectionalLight(0xffffff, 2)
-    dirLight.position.set(5, 3, 0) // x, y, z
+    dirLight.position.set(1, 0, 3) // x, y, z
     scene.add(dirLight)
 
     // Animation loop
