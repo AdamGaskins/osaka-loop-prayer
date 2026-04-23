@@ -2,7 +2,7 @@
     {
         "name": "Kyōbashi",
         "name_kanji": "京[きょう]橋[ばし]",
-        "description": "Kyōbashi houses one of the city's largest business districts and is close to many tourist attractions. This district is famous for its shopping and nightlife. (due to the presence of many bars, the prostitution and exploitation is heavy in this area.)",
+        "description": "Kyōbashi is one of the city's transportation hubs and entertainment districts, mostly catering to Japanese salarymen rather than tourists. Its streets are lined with restaurants, bars and pachinko parlors. Inebriated businessmen can be seen stumbling home at all hours of the morning.",
         "song": "Old McDonald",
         "verses": [
             {
@@ -15,9 +15,8 @@
             }
         ],
         "prayer_points": [
-            "Pray that the people of Osaka would be able to taste and see that God is good and that He alone can fulfill their every need.",
-            "Pray that God would open the eyes of those involved in sexual exploitation and prostitution in Kyobashi.",
-            "Ask God to show the Japanese the light of the gospel of the glory of Christ so that they may turn to Jesus."
+            "For the salarymen who drown their sadness with alcohol and pachinko: Pray that they would taste and see that the Lord is good.",
+            "For the owners of the bars and restaurants: Pray that they would come to Christ and be lights in their community."
         ]
     },
     {
@@ -74,36 +73,30 @@
             }
         ],
         "prayer_points": [
-            "Pray for more missionaries, national pastors and Christians to surrender and be obedient to the call of reaching the Japanese.",
-            "Pray that God would give those wor ers t e same compassion and love as Christ.",
+            "Pray for more missionaries, national pastors and regular Christians to surrender and be obedient to the call of reaching the Japanese.",
             "Ask that God would bring a great harvest to Japan."
         ]
     },
     {
         "name": "Fukushima",
         "name_kanji": "福[ふく]島[しま]",
-        "description": "Outside of Japan, the name Fukushima brings to mind natural and nuclear disasters. While it is true that Japan is prone to natural disasters, for the Japanese, Fukushima is a familiar company name and surname.",
+        "description": "Fukushima boasts streets upon streets full of quaint restaurants, providing a much quieter alternative to the bustling city center nearby. This area is a mix of old and new; alleyways packed with tiny, traditional restaurants are nestled right next to modern apartments and cafes.",
         "song": "Dream Flower",
         "verses": [
             {
-                "ref": "Psalm 46:1-3",
-                "text": "God is our refuge and strength, an ever-present help in trouble. Therefore we will not fear, though the earth give way and the mountains fall into the heart of the sea, though its waters roar and foam and the mountains quake with their surging."
-            },
-            {
-                "ref": "John 14:27",
-                "text": "Peace I leave with you; my peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid."
+                "ref": "Isaiah 43:19",
+                "text": "Behold, I am doing a new thing; now it springs forth, do you not perceive it? I will make a way in the wilderness and rivers in the desert."
             }
         ],
         "prayer_points": [
-            "Pray for the Japanese who have experienced tragedy and disaster, that they would find hope in Christ.",
-            "Pray that God would cultivate a culture in Japan defined by His grace and love rather expectations of perfection.",
-            "Ask that the Holy Spirit would give the Japanese Christians a bold spirit full of hope and peace."
+            "Pray that as gospel conversations are had over meals, the Holy Spirit would open eyes and ears to receive.",
+            "Pray for Japanese believers who gather and eat, that they would be iron sharpening iron."
         ]
     },
     {
         "name": "Noda",
         "name_kanji": "野[の]田[だ]",
-        "description": "The majority of Osaka's food supply comes through Osaka's Central Wholesale Market. In fact each morning at 4:15 am the market holds a special auction for the freshest tuna. Unlike most retail businesses, Osaka's Central market is closed on Sundays.",
+        "description": "The majority of Osaka's food supply comes through Noda's Central Wholesale Market. Each morning at 4:15am, the market holds a special auction for the freshest tuna. Unlike most retail businesses, Osaka's Central market is closed on Sundays.",
         "song": "Russian Folk Song",
         "verses": [
             {
@@ -112,9 +105,8 @@
             }
         ],
         "prayer_points": [
-            "Pray for more businesses to be flexible concerning their employees so that they can attend church.",
-            "Just as Jesus used fish and food to reach many, ask that He would use the area of Noda and God's creation to reach many for His Kingdom.",
-            "Nearby \"Hell Valley\" is known for its bars and night spots. Pray that Japan would turn to Jesus rather than alcohol."
+            "Pray for businesses to be more flexible concerning their working hours so that their employees can attend church.",
+            "Just as Jesus used fish and food to reach many, ask that He would use the area of Noda and God's creation to reach many for His Kingdom."
         ]
     },
     {
@@ -137,28 +129,27 @@
     {
         "name": "Bentenchō",
         "name_kanji": "弁[べん]天[てん]町[ちょう]",
-        "description": "The smallest of the stations along the loop line, and the closest to Osaka Bay. This small area seemingly has only one purpose: to connect the Osaka Loop Line to the Chuo Subway Line.",
+        "description": "The smallest of the stations along the loop line, Bentenchō serves a quiet area and provides a transfer to the Chuo Subway Line. Small as it is, still over 80,000 people live in this ward of the city, most of whom know nothing about the gospel.",
         "song": "I've been workin' on the railroad",
         "verses": [
             {
-                "ref": "John 6:51",
-                "text": "I am the living bread that came down from heaven. If anyone eats of this bread, he will live forever. And the bread that I will give for the life of the world is my flesh."
+                "ref": "Micah 5:2",
+                "text": "But you, O Bethlehem Ephrathah, who are too little to be among the clans of Judah, from you shall come forth for me one who is to be ruler in Israel, whose coming forth is from of old, from ancient days."
             },
             {
-                "ref": "Luke 12:33",
-                "text": "Sell your possessions, and give to the needy. Provide yourselves with moneybags that do not grow old, with a treasure in the heavens that does not fail, where no thief approaches and no moth destroys."
+                "ref": "John 6:51",
+                "text": "I am the living bread that came down from heaven. If anyone eats of this bread, he will live forever. And the bread that I will give for the life of the world is my flesh."
             }
         ],
         "prayer_points": [
-            "Pray that as missionaries daily travel God would connect them to individuals who will help them to be included in culture.",
-            "Pray that Christians would encounter \"persons of peace\" who are open to talk about the Gospel.",
-            "Ask that pastors in Japan would work with missionaries in sound discipleship and evangelism."
+            "Pray that God would raise up a strong Christian leader out of the quiet streets of Bentenchō.",
+            "Pray that Christians would encounter \"persons of peace\" who are open to talk about the Gospel."
         ]
     },
     {
         "name": "Taishō",
         "name_kanji": "大[たい]正[しょう]",
-        "description": "The Taisho area is named after the former Taisho Emperor and era in which Japan became a democratic society. This area is also home to many people from Okinawa. The Osaka Dome home to Orix Buffalo baseball is also located here.",
+        "description": "The Taisho area is named after the former Taisho Emperor and the era in which Japan became a democratic society. The Osaka Dome, home to Orix Buffalo baseball team, is also located here.",
         "song": "Okinawa Folk Song",
         "verses": [
             {
@@ -179,7 +170,7 @@
     {
         "name": "Ashiharabashi",
         "name_kanji": "芦[あし]原[はら]橋[ばし]",
-        "description": "Ashiharabashi is known for its famous landmarks in nearby Namba but also for many long established drum makers. Unfortunately, rythmic music has a long tradition within Japan's pagan festivals.",
+        "description": "Ashiharabashi is known for its famous landmarks in nearby Namba but also for many long established drum makers. These drums have a long tradition of being used to worship the many false gods of Japan.",
         "song": "Festival",
         "verses": [
             {
@@ -221,7 +212,7 @@
     {
         "name": "Shin-Imamiya",
         "name_kanji": "新[しん]今[いま]宮[みや]",
-        "description": "This area is sadly \"home\" to many homeless, outcasts and victims of cultural pressures. Each year, Imamiya Ebisu Shrine hosts a festival in which Osakans pray to the gods of business and prosperity.",
+        "description": "This area is sadly \"home\" to many homeless, outcasts and victims of overwhelming cultural pressures. Each year, the nearby Ebisu Shrine hosts a festival in which Osaka business owners pray to the gods of commerce and prosperity.",
         "song": "New World",
         "verses": [
             {
@@ -242,7 +233,7 @@
     {
         "name": "Tennōji",
         "name_kanji": "天[てん]王[おう]寺[じ]",
-        "description": "Tennoji is home to Abeno Harukas, one of the tallest buildings in Japan. Shitennoji Temple is also located nearby, know for the bells which are rung throughout the temple grounds. Numbered tickets are often given for entry due to the crowds.",
+        "description": "Tennoji is home to Abeno Harukas, one of the tallest buildings in Japan. Shitennoji Temple is also located nearby, known for the bells which are rung throughout the temple grounds. Numbered tickets are often given for entry due to the crowds.",
         "song": "Are You to Ring that Bell",
         "verses": [
             {
@@ -325,49 +316,47 @@
     {
         "name": "Tamatsukuri",
         "name_kanji": "玉[たま]造[つくり]",
-        "description": "Tamatsukuri station is close to the famous Inari Shrine. The shrine, tracing to 12BC, was dedicated to the Shinto god Inari in hopes that he would protect the Osaka Castle.",
+        "description": "\"Tamatsukuri\" literally means \"jewelry making,\" as this area was a center for making talismans in ancient times. These talismans were made of jade and quartz and were used for good fortune and protection from evil. At a nearby shrine, some of these talismans are still on display.",
         "song": "Mary Had a Little Lamb",
         "verses": [
             {
-                "ref": "Psalm 78:4",
-                "text": "We will not hide them from their children, but tell to the coming generation the glorious deeds of the Lord, and his might, and the wonders that he has done."
-            },
-            {
                 "ref": "Psalm 115:4,8",
                 "text": "Their idols are silver and gold, the work of human hands. ... Those who make them become like them; so do all who trust in them."
+            },
+            {
+                "ref": "Psalm 78:4",
+                "text": "We will not hide them from their children, but tell to the coming generation the glorious deeds of the Lord, and his might, and the wonders that he has done."
             }
         ],
         "prayer_points": [
-            "Pray the Japanese would see the emptiness of their idol worship and traditions and turn to the one true God.",
-            "Pray the children in Japan would all have early exposure to the gospel and rise up to be a strong generation of believers.",
-            "Pray for Japanese Christian parents to intentionally teach the glorious deeds of the Lord to their children."
+            "Pray the Japanese would see the emptiness of their idol worship and turn to the one true God.",
+            "Pray the children in Japan would have early exposure to the gospel, leading to waves of new believers."
         ]
     },
     {
         "name": "Morinomiya",
         "name_kanji": "森[もり]ノ 宮[みや]",
-        "description": "This station is also used to access Osaka Castle Park and was a catalyst for the renewal of other stations. Adjacent to Morinomiya Station, there are many scenic paths, water fountains and a iogging course, which attract locals as well as tourists.",
+        "description": "This station is one of two that provide access to Osaka Castle Park. This half of the park is home to a large, majestic fountain, as well as a small World War II museam. Adjacent to the station is a shopping mall that boasts a jogging track in the sky.",
         "song": "Bear of the Forest",
         "verses": [
             {
-                "ref": "Romans 1:20",
-                "text": "For his invisible attributes, namely, his eternal power and divine nature, have been clearly perceived, ever since the creation of the world, in the things that have been made."
-            },
-            {
                 "ref": "John 7:36-38",
                 "text": "Jesus stood up and cried out, \"If anyone thirsts, let him come to me and drink. Whoever believes in me, as the scripture has said, 'Out of his heart will flow rivers of living water.'\""
+            },
+            {
+                "ref": "Romans 1:20",
+                "text": "For his invisible attributes, namely, his eternal power and divine nature, have been clearly perceived, ever since the creation of the world, in the things that have been made."
             }
         ],
         "prayer_points": [
-            "Pray that Japanese churches would become the front runners and catalysts for explosive progress in the mission task in Japan.",
             "As the Japanese search for rest and a place of relaxation in the midst of the city, pray that they would seek Jesus for their true rest and \"living water\".",
-            "As individuals board at this station pray that God would reveal Himself to them through His beautiful creation."
+            "Pray that Japanese churches would become the front runners of the mission task in Japan."
         ]
     },
     {
         "name": "Ōsakajōkōen",
         "name_kanji": "大[おお]阪[さか]城[じょう]公[こう]園[えん]",
-        "description": "Osaka Castle Park surrounds the famous Osaka Castle which can often be seen lit up at night. Built by Toyotomi Hideyoshi in 1583 and rebuilt by shoguns in the 1620s, the Castle is one of the few to have survived air raids during World War II.",
+        "description": "Ōsakajōkōen (\"Osaka Castle Park\") is one of two stations that provide access to the famous Osaka Castle. In the spring, the Castle becomes one of Osaka's most crowded cherry blossom viewing sites. It has been rebuilt many times, most recently in 1931, with the interior now functioning as a modern museum.",
         "song": "Conch",
         "verses": [
             {
@@ -380,9 +369,8 @@
             }
         ],
         "prayer_points": [
-            "Pray that the Japanese would surrender to Jesus and call on God as their deliver and stronghold.",
-            "Ask that Christianity would be a light in Japan and solid doctrine would persevere in the midst of capitalism.",
-            "Pray that believers would trust God to be their rock and shield concerning successes and in relationships as they share Christ."
+            "Pray that the Japanese would look to Jesus as their fortress and deliverer.",
+            "Pray that beauty of Jesus' face would become more famous in Japan than even the cherry blossoms."
         ]
     }
 ]
