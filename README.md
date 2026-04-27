@@ -1,7 +1,22 @@
-- [x] Stage 1: Put existing prayer content into website form.
-- [ ] Stage 2: Update prayer content. Much is outdated or irrelevant.
+## Editing
 
-## Osaka Station Resources
+The information for each station can be found and edited in `src/stations/`. The
+station info is written in the YAML format.
+
+## Developing
+
+```
+npm install
+npm run dev
+```
+
+## Building
+
+```
+npm run build
+```
+
+## Resources
 
 Station Melodies:
 https://www.westjr.co.jp/press/article/items/150316_00_osakaloop.pdf
