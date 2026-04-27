@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import InfoBoard from '../components/InfoBoard.vue'
 import ArrowSvg from '../assets/arrow-right-solid-full.svg'
-import type { StationDefinition } from '@/types'
-import { nextTick, ref } from 'vue'
+import { ref } from 'vue'
 import YellowButton from './YellowButton.vue'
 import { useStationsStore } from '@/stores/stations'
 import { storeToRefs } from 'pinia'
@@ -30,7 +29,10 @@ const prayerColors = ['bg-blue-500', 'bg-green-500', 'bg-red-500']
 
 <template>
     <div class="relative h-full mx-2 safe-padding-bottom">
-        <Transition :name="flipAnimation ? 'slide-side-flipped' : 'slide-side'" mode="out-in">
+        <Transition
+            :name="flipAnimation ? 'slide-side-flipped' : 'slide-side'"
+            mode="out-in"
+        >
             <div v-if="viewingFront" class="side">
                 <div class="h-full overflow-scroll">
                     <!-- Information -->
@@ -41,7 +43,9 @@ const prayerColors = ['bg-blue-500', 'bg-green-500', 'bg-red-500']
 
                     <div class="px-4">
                         <div class="text-sm leading-4.5 tracking-wider mt-6">
-                            <p class="font-bold">{{ currentStation.verses?.[0]?.ref }}</p>
+                            <p class="font-bold">
+                                {{ currentStation.verses?.[0]?.ref }}
+                            </p>
                             <p>{{ currentStation.verses?.[0]?.text }}</p>
 
                             <p class="font-bold mt-6">Departure Melody</p>
@@ -59,15 +63,27 @@ const prayerColors = ['bg-blue-500', 'bg-green-500', 'bg-red-500']
             </div>
             <div v-else class="side p-2">
                 <div class="h-full overflow-scroll">
-                    <h1 class="font-bold text-xl mb-4 text-center">お祈り　Prayer Requests</h1>
+                    <h1 class="font-bold text-xl mb-4 text-center">
+                        お祈り　Prayer Requests
+                    </h1>
 
-                    <InfoBoard v-for="(prayer, i) in currentStation.prayer_points" class="mb-2">
+                    <InfoBoard
+                        v-for="(prayer, i) in currentStation.prayer_points"
+                        class="mb-2"
+                    >
                         <div class="flex">
-                            <div class="text-6xl font-extralight pl-3 text-center w-16 shrink-0">
+                            <div
+                                class="text-6xl font-extralight pl-3 text-center w-16 shrink-0"
+                            >
                                 {{ i + 1 }}
                             </div>
-                            <div :class="prayerColors[i]" class="shrink-0 w-4 my-1"></div>
-                            <div class="px-4 py-2 leading-4.5 text-sm">{{ prayer }}</div>
+                            <div
+                                :class="prayerColors[i]"
+                                class="shrink-0 w-4 my-1"
+                            ></div>
+                            <div class="px-4 py-2 leading-4.5 text-sm">
+                                {{ prayer }}
+                            </div>
                         </div>
                     </InfoBoard>
                 </div>

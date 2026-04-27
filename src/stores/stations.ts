@@ -1,11 +1,15 @@
+import type { StationDefinition } from '@/types'
 import { defineStore } from 'pinia'
-import _stations from '../stations.json'
 import { computed, ref } from 'vue'
 
+const _station_data = import.meta.glob('./../stations/*.yaml', { eager: true })
+const _stations = Object.values(_station_data).map(
+    (v) => (v as unknown as any).default,
+)
 _stations.splice(1, _stations.length - 1, ..._stations.slice(1).reverse())
 
 export const useStationsStore = defineStore('stations', () => {
-    const stations = ref(_stations)
+    const stations = ref<StationDefinition[]>(_stations)
 
     const stationIndex = ref(0)
     const visitedStations = ref<number[]>([])
