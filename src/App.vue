@@ -10,7 +10,7 @@ import { useStationsStore } from './stores/stations'
 import { storeToRefs } from 'pinia'
 
 const stationsStore = useStationsStore()
-const { stationIndex, stations, visitedStations } = storeToRefs(stationsStore)
+const { stationIndex, stations } = storeToRefs(stationsStore)
 
 const reverseAnimation = ref(false)
 const showTutorial = ref(true)
