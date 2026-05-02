@@ -12,6 +12,7 @@ defineProps<{ stations: StationDefinition[] }>()
 
 const chosenStation = ref(false)
 const specialStations = ['Kyōbashi', 'Ōsaka', 'Tennōji']
+const version = import.meta.env.VITE_APP_VERSION
 
 const emit = defineEmits<{
     (e: 'close'): void
@@ -29,14 +30,22 @@ function close() {
 }
 
 function print() {
-    window.print()
+    window.location.href = '/Osaka Loop Prayer.pdf'
 }
 </script>
 
 <template>
     <div class="absolute inset-0 bg-white text-center" @click="close">
         <div v-if="!chosenStation" class="w-full h-full overflow-y-auto">
-            <div class="absolute top-2 right-2 text-xl" @click="print">🖨️</div>
+            <div
+                class="absolute top-2 right-2 text-xs shadow bg-gray-100 px-1 py-0.5"
+                @click="print"
+            >
+                Offline PDF
+            </div>
+
+            <div class="absolute top-2 left-2 text-xs">v{{ version }}</div>
+
             <h1 class="leading-9 uppercase text-6xl font-bold mt-12">
                 <div class="mr-0">Pray</div>
                 <div class="text-osaka-red">Osaka</div>

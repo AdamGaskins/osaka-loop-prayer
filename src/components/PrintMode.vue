@@ -3,6 +3,7 @@ import { useStationsStore } from '@/stores/stations'
 import PrintPage from './PrintMode/PrintPage.vue'
 import Kanji from '@/Kanji.vue'
 const stationsStore = useStationsStore()
+const version = import.meta.env.VITE_APP_VERSION
 </script>
 
 <template>
@@ -16,8 +17,7 @@ const stationsStore = useStationsStore()
         </div>
 
         <div class="text-xs absolute bottom-4 left-4">
-            Generated {{ new Date().toLocaleDateString() }} ・
-            https://loop.adamgaskins.dev/
+            https://loop.adamgaskins.dev/ ・ v{{ version }}
         </div>
     </PrintPage>
     <PrintPage
