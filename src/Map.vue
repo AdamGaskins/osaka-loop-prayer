@@ -1,11 +1,18 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
 import { useStationsStore } from './stores/stations'
-import { onMounted, onUnmounted, reactive, ref, useTemplateRef, watch } from 'vue'
+import {
+    onMounted,
+    onUnmounted,
+    reactive,
+    ref,
+    useTemplateRef,
+    watch,
+} from 'vue'
 import gsap from 'gsap'
 
 const stationsStore = useStationsStore()
-const startingStationOffset = 0.3364
+const startingStationOffset = 0.35
 
 const svg = useTemplateRef('svg')
 const svgCurve = useTemplateRef('svgCurve')
@@ -26,14 +33,25 @@ watch(stationIndex, (i) => {
     if (tween) {
         tween.kill()
     }
-    tween = gsap.to(tweened, { stationIndex: i, duration: 1, ease: 'sine.inOut' })
+    tween = gsap.to(tweened, {
+        stationIndex: i,
+        duration: 1,
+        ease: 'sine.inOut',
+    })
 })
 
 function updateTrainPoint() {
-    tweenedTrainPoint.value = getPosition(tweened.stationIndex / stations.value.length)!
-    const nextP = getPosition(tweened.stationIndex / stations.value.length + 0.01)!
+    tweenedTrainPoint.value = getPosition(
+        tweened.stationIndex / stations.value.length,
+    )!
+    const nextP = getPosition(
+        tweened.stationIndex / stations.value.length + 0.01,
+    )!
     tweenedTrainRotation.value =
-        -Math.atan2(tweenedTrainPoint.value.y - nextP.y, tweenedTrainPoint.value.x - nextP.x) +
+        -Math.atan2(
+            tweenedTrainPoint.value.y - nextP.y,
+            tweenedTrainPoint.value.x - nextP.x,
+        ) +
         Math.PI / 2
 }
 watch(tweened, () => updateTrainPoint())
@@ -60,6 +78,8 @@ function getPosition(percent: number) {
     while (percent >= 1) percent -= 1
     while (percent < 0) percent += 1
 
+    percent = 1 - percent
+
     const length = svgCurve.value.getTotalLength()
 
     return svgCurve.value.getPointAtLength(percent * length)
@@ -83,7 +103,11 @@ onUnmounted(() => {
             ></div>
 
             <div class="absolute inset-0">
-                <svg ref="svg" class="w-full h-full" :viewBox="'0 0 ' + svgW + ' ' + svgH">
+                <svg
+                    ref="svg"
+                    class="w-full h-full"
+                    :viewBox="'0 0 ' + svgW + ' ' + svgH"
+                >
                     <rect
                         ref="svgCurve"
                         x="0"
@@ -130,7 +154,11 @@ onUnmounted(() => {
                         offsetRotate: 'none',
                     }"
                 >
-                    <div class="animate-[bumpy_1s_linear_infinite] absolute emoji-shadow">🚃</div>
+                    <div
+                        class="animate-[bumpy_1s_linear_infinite] absolute emoji-shadow"
+                    >
+                        🚃
+                    </div>
                 </div>
             </div>
         </div>

@@ -34,8 +34,8 @@ function print() {
 </script>
 
 <template>
-    <div class="absolute inset-0 bg-gray-200 text-center" @click="close">
-        <template v-if="!chosenStation">
+    <div class="absolute inset-0 bg-white text-center" @click="close">
+        <div v-if="!chosenStation" class="w-full h-full overflow-y-auto">
             <div class="absolute top-2 right-2 text-xl" @click="print">🖨️</div>
             <h1 class="leading-9 uppercase text-6xl font-bold mt-12">
                 <div class="mr-0">Pray</div>
@@ -45,21 +45,38 @@ function print() {
 
             <div class="mt-16 mb-2">Tap your starting station</div>
 
-            <div class="grid grid-cols-3 ring-red-600 gap-x-2 gap-y-2 p-2">
+            <div class="mx-auto flex flex-col px-6 relative mb-8">
+                <div
+                    class="absolute left-14.5 top-0 bottom-0 bg-osaka-red w-4 z-0"
+                ></div>
+
                 <button
                     v-for="(station, i) of stations"
                     @click.stop.prevent="chooseStation(i)"
-                    class="bg-white border border-gray-100 text-sm rounded-lg py-2 shadow-lg"
+                    class="border-gray-100 text-lg py-2 flex justify-start items-center w-full z-20"
                     :class="{
-                        'border-black! font-bold': specialStations.includes(
-                            station.name,
-                        ),
+                        ' font-bold': specialStations.includes(station.name),
                     }"
                 >
-                    {{ station.name }}
+                    <span class="w-8">
+                        <template v-if="specialStations.includes(station.name)">
+                            ⭐
+                        </template>
+                    </span>
+                    <span
+                        class="bg-white border-3 border-black size-5 rounded-full mr-2"
+                    ></span>
+                    <span
+                        class="bg-osaka-red text-white w-8 h-6 flex justify-center items-center rounded-md font-light"
+                    >
+                        {{ station.number.toString().padStart(2, '0') }}
+                    </span>
+                    <span class="ml-2">
+                        {{ station.name }}
+                    </span>
                 </button>
             </div>
-        </template>
+        </div>
         <template v-else>
             <div class="h-22"></div>
             <StationSign />

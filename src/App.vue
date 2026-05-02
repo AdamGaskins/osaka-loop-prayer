@@ -20,11 +20,11 @@ function closeTutorial() {
 }
 
 function goNextStation() {
-    stationIndex.value++
+    stationIndex.value--
     reverseAnimation.value = false
 }
 function goPrevStation() {
-    stationIndex.value--
+    stationIndex.value++
     reverseAnimation.value = true
 }
 </script>

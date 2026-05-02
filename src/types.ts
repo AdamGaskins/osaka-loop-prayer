@@ -4,6 +4,7 @@ export interface VerseDefinition {
 }
 
 export interface StationDefinition {
+    number: number
     name: string
     name_kanji: string
     description?: string
