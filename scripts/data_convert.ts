@@ -1,9 +1,9 @@
 #!/usr/bin/env npx tsx
 
-import { readdir, readFile } from 'node:fs/promises'
+import { readdir, readFile, writeFile } from 'node:fs/promises'
 import { argv, exit } from 'node:process'
 import { extname, join } from 'node:path'
-import yaml from 'js-yaml'
+import yaml, { Type } from 'js-yaml'
 import ExcelJS from 'exceljs'
 
 if (argv.length < 4 || ['to_xlsx', 'to_yaml'].indexOf(argv[2]) === -1) {
@@ -35,17 +35,39 @@ function json_to_excel(json: JsonData) {
 
     return rows
 }
-// number
-// name
-// kanji
-// description
-// song
-// verse
-// verse
-// prayer
-// prayer
-// prayer
-//
+
+function excel_to_json(worksheet: ExcelJS.Worksheet): JsonData {
+    const data: JsonData = {
+        number: -1,
+        name: '',
+        name_kanji: '',
+        description: '',
+        song: '',
+        verses: [],
+        prayer_points: [],
+    }
+
+    function getValue(cell: ExcelJS.Cell) {
+        return cell.text.trim()
+    }
+
+    worksheet.eachRow((row) => {
+        const type = getValue(row.getCell(1))
+        const value = getValue(row.getCell(2))
+
+        if (type === 'number') data.number = parseInt(value)
+        if (type === 'name') data.name = value
+        if (type === 'kanji') data.name_kanji = value
+        if (type === 'description') data.description = value
+        if (type === 'song') data.song = value
+        if (type === 'prayer' && value.trim().length > 0)
+            data.prayer_points.push(value)
+        if (type === 'verse' && value.length > 0)
+            data.verses.push({ ref: getValue(row.getCell(3)), text: value })
+    })
+    return data
+}
+
 if (argv[2] === 'to_xlsx') {
     const files = (await readdir('./src/stations/')).filter(
         (f) => extname(f).toLocaleLowerCase() === '.yaml',
@@ -86,19 +108,31 @@ if (argv[2] === 'to_xlsx') {
     await workbook.xlsx.writeFile(excelPath)
     console.log('Finished!')
 } else if (argv[2] === 'to_yaml') {
-}
+    console.log('Reading file ' + excelPath)
+    const workbook = new ExcelJS.Workbook()
+    await workbook.xlsx.readFile(excelPath)
 
-interface ExcelRow {
-    type:
-        | 'number'
-        | 'name'
-        | 'kanji'
-        | 'description'
-        | 'song'
-        | 'verse'
-        | 'prayer'
-    reference: string
-    value: string | number
+    const path = './src/stations/'
+
+    for (const worksheet of workbook.worksheets) {
+        if (worksheet.name.charAt(0) === '#') continue
+
+        const jsonData = excel_to_json(worksheet)
+
+        const yamlString = yaml.dump(jsonData, {
+            indent: 4,
+        })
+
+        const fileName =
+            jsonData.number.toString().padStart(2, '0') +
+            ' ' +
+            jsonData.name +
+            '.yaml'
+
+        await writeFile(join(path, fileName), yamlString)
+        console.log('Wrote ' + fileName)
+    }
+    console.log('Finished!')
 }
 
 interface VerseDefinition {
