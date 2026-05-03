@@ -4,10 +4,7 @@ import { readdir, readFile } from 'node:fs/promises'
 import { argv, exit } from 'node:process'
 import { extname, join } from 'node:path'
 import yaml from 'js-yaml'
-import * as XLSX from 'xlsx'
-
-import * as fs from 'fs'
-XLSX.set_fs(fs)
+import ExcelJS from 'exceljs'
 
 if (argv.length < 4 || ['to_xlsx', 'to_yaml'].indexOf(argv[2]) === -1) {
     console.log('Usage: data_convert [to_xlsx|to_yaml] <xlsx path>')
@@ -18,23 +15,22 @@ const excelPath = argv[3]
 
 function json_to_excel(json: JsonData) {
     const rows: (string | number)[][] = [
-        ['Type', 'Reference', 'Value'],
-        ['number', '', json.number],
-        ['name', '', json.name],
-        ['kanji', '', json.name_kanji],
-        ['description', '', json.description],
-        ['song', '', json.song],
+        ['name', json.name],
+        ['kanji', json.name_kanji],
+        ['number', json.number],
+        ['description', json.description],
+        ['song', json.song],
         [],
     ]
 
-    for (let i = 0; i < Math.min(3, json.verses.length); i++) {
-        rows.push(['verse', json.verses[i].ref, json.verses[i].text])
+    for (let i = 0; i < Math.max(3, json.verses.length); i++) {
+        rows.push(['verse', json.verses[i]?.text, json.verses[i]?.ref])
     }
 
     rows.push([])
 
     for (let i = 0; i < Math.max(3, json.prayer_points.length); i++) {
-        rows.push(['prayer', '', json.prayer_points[i]])
+        rows.push(['prayer', json.prayer_points[i]])
     }
 
     return rows
@@ -57,20 +53,37 @@ if (argv[2] === 'to_xlsx') {
 
     console.log('Found ' + files.length + ' yaml files.')
 
-    const workbook = XLSX.utils.book_new()
+    const workbook = new ExcelJS.Workbook()
 
     for (const file of files) {
         const yamlData = yaml.load(
             await readFile(join('./src/stations/', file), 'utf8'),
         ) as JsonData
-        console.log('Writing sheet: ' + yamlData.name)
+        const sheetName =
+            yamlData.number.toString().padStart(2, '0') + ' ' + yamlData.name
+        console.log('Writing sheet: ' + sheetName)
         const excelData = json_to_excel(yamlData)
-        const sheet = XLSX.utils.aoa_to_sheet(excelData)
-        XLSX.utils.book_append_sheet(workbook, sheet, yamlData.name)
+        const sheet = workbook.addWorksheet(sheetName)
+        sheet.addRows(excelData)
+        // sheet.columns.forEach((c) => (c.font = { size: 14 }))
+        sheet.getColumn(1).font = { bold: true }
+
+        sheet.getColumn(1).width = 12
+        sheet.getColumn(1).alignment = { vertical: 'middle' }
+
+        sheet.getColumn(2).width = 50
+        sheet.getColumn(2).alignment = {
+            vertical: 'top',
+            horizontal: 'left',
+            wrapText: true,
+        }
+
+        sheet.getColumn(3).width = 20
+        sheet.getColumn(3).alignment = { vertical: 'top' }
     }
 
     console.log('Saving to: ' + excelPath)
-    XLSX.writeFile(workbook, excelPath, { compression: true })
+    await workbook.xlsx.writeFile(excelPath)
     console.log('Finished!')
 } else if (argv[2] === 'to_yaml') {
 }
