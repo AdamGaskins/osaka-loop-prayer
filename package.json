@@ -1,12 +1,14 @@
 {
     "name": "loop-prayer",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "private": true,
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "run-p type-check lint \"build-only {@}\" --",
+        "build": "run-p type-check lint && run-s \"build-only {@}\" --",
+        "deploy": "run-s build deploy-only",
         "preview": "vite preview",
+        "deploy-only": "netlify deploy --no-build --dir dist --prod --site loop-prayer",
         "build-only": "vite build",
         "type-check": "vue-tsc --build",
         "lint": "run-s lint:*",
