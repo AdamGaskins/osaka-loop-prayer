@@ -2,9 +2,10 @@
 
 import { readdir, readFile, writeFile } from 'node:fs/promises'
 import { argv, exit } from 'node:process'
-import { extname, join } from 'node:path'
+import { extname, join, resolve } from 'node:path'
 import yaml, { Type } from 'js-yaml'
 import ExcelJS from 'exceljs'
+import * as prettier from 'prettier'
 
 if (argv.length < 4 || ['to_xlsx', 'to_yaml'].indexOf(argv[2]) === -1) {
     console.log('Usage: data_convert [to_xlsx|to_yaml] <xlsx path>')
@@ -129,7 +130,17 @@ if (argv[2] === 'to_xlsx') {
             jsonData.name +
             '.yaml'
 
-        await writeFile(join(path, fileName), yamlString)
+        let options = await prettier.resolveConfig(
+            resolve(path) + '/' + fileName,
+        )
+        if (options === null) options = {}
+        options.parser = 'yaml'
+        const formattedYaml = await prettier.format(
+            yamlString,
+            options ?? undefined,
+        )
+
+        await writeFile(join(path, fileName), formattedYaml)
         console.log('Wrote ' + fileName)
     }
     console.log('Finished!')
