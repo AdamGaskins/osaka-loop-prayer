@@ -61,6 +61,7 @@ function print() {
 
                 <button
                     v-for="(station, i) of stations"
+                    :key="i"
                     @click.stop.prevent="chooseStation(i)"
                     class="border-gray-100 text-lg py-2 flex justify-start items-center w-full z-20"
                     :class="{

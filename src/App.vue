@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import Map from './Map.vue'
+import StationMap from './components/StationMap.vue'
 import FullStationDisplay from './components/FullStationDisplay.vue'
 import PrevNextTransition from './components/PrevNextTransition.vue'
 import PrintMode from './components/PrintMode.vue'
-import Tutorial from './components/Tutorial.vue'
+import TutorialScreen from './components/TutorialScreen.vue'
 import StationSign from './components/StationSign.vue'
 import { useStationsStore } from './stores/stations'
 import { storeToRefs } from 'pinia'
@@ -36,7 +36,7 @@ function goPrevStation() {
         >
             <div class="relative">
                 <div class="flex my-4 safe-top">
-                    <Map class="w-full" />
+                    <StationMap class="w-full" />
                 </div>
 
                 <!-- Station Sign -->
@@ -63,7 +63,7 @@ function goPrevStation() {
 
             <div class="h-4 shrink-0"></div>
         </div>
-        <Tutorial
+        <TutorialScreen
             v-if="showTutorial"
             @close="closeTutorial"
             :stations="stations"

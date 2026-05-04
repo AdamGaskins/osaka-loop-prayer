@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import Kanji from '@/Kanji.vue'
-import type { StationDefinition } from '@/types'
+import KanjiRuby from './KanjiRuby.vue'
 import PrevNextTransition from './PrevNextTransition.vue'
-import { useStationsStore } from '@/stores/stations'
+import { useStationsStore } from '../stores/stations'
 
 const stationsStore = useStationsStore()
 
@@ -18,7 +17,7 @@ defineProps<{
             class="m-2 border border-black shadow-lg rounded-sm overflow-x-clip bg-white text-black"
         >
             <div class="text-center py-2">
-                <Kanji
+                <KanjiRuby
                     kanjiOnly
                     :kanji="stationsStore.currentStation.name_kanji"
                     class="text-2xl font-bold transition-slide"

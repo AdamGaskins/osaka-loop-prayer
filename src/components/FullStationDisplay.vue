@@ -69,6 +69,7 @@ const prayerColors = ['bg-blue-500', 'bg-green-500', 'bg-red-500']
 
                     <InfoBoard
                         v-for="(prayer, i) in currentStation.prayer_points"
+                        :key="i"
                         class="mb-2"
                     >
                         <div class="flex">

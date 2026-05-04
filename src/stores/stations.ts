@@ -2,10 +2,13 @@ import type { StationDefinition } from '@/types'
 import { defineStore } from 'pinia'
 import { computed, ref } from 'vue'
 
-const _station_data = import.meta.glob('./../stations/*.yaml', { eager: true })
-const _stations = Object.values(_station_data).map(
-    (v) => (v as unknown as any).default,
-)
+const _station_data = import.meta.glob('./../stations/*.yaml', {
+    eager: true,
+    import: 'default',
+})
+const _stations: StationDefinition[] = Object.values(
+    _station_data,
+) as StationDefinition[]
 
 export const useStationsStore = defineStore('stations', () => {
     const stations = ref<StationDefinition[]>(_stations)

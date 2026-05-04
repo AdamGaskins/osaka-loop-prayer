@@ -3,7 +3,7 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises'
 import { argv, exit } from 'node:process'
 import { extname, join, resolve } from 'node:path'
-import yaml, { Type } from 'js-yaml'
+import yaml from 'js-yaml'
 import ExcelJS from 'exceljs'
 import * as prettier from 'prettier'
 

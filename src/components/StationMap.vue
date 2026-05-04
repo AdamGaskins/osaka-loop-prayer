@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { storeToRefs } from 'pinia'
-import { useStationsStore } from './stores/stations'
+import { useStationsStore } from '@/stores/stations'
 import {
     onMounted,
     onUnmounted,
@@ -134,6 +134,7 @@ onUnmounted(() => {
                         transform: 'translate(' + p.x + 'px, ' + p.y + 'px)',
                     }"
                     v-for="(p, i) of stationPoints"
+                    :key="i"
                 >
                     <div
                         v-if="visitedStations.indexOf(i) !== -1"

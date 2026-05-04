@@ -3,7 +3,6 @@ import { computed } from 'vue'
 
 const props = defineProps<{
     kanji: string
-    class?: string
     rubyClass?: string
     kanjiOnly?: boolean
 }>()
@@ -39,8 +38,8 @@ const characters = computed(() => {
 </script>
 
 <template>
-    <ruby :class="class">
-        <template v-for="c of characters">
+    <ruby>
+        <template v-for="(c, i) of characters" :key="i">
             {{ c[0] }}<rt v-if="!kanjiOnly" :class="rubyClass">{{ c[1] }}</rt>
         </template>
     </ruby>

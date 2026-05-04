@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { useStationsStore } from '@/stores/stations'
+import { useStationsStore } from '../stores/stations'
 import PrintPage from './PrintMode/PrintPage.vue'
-import Kanji from '@/Kanji.vue'
+import KanjiRuby from '../components/KanjiRuby.vue'
 const stationsStore = useStationsStore()
 const version = import.meta.env.VITE_APP_VERSION
 </script>
@@ -26,7 +26,7 @@ const version = import.meta.env.VITE_APP_VERSION
         class="text-lg leading-6"
     >
         <div class="text-center text-4xl">
-            <Kanji :kanji="item.name_kanji" kanjiOnly />
+            <KanjiRuby :kanji="item.name_kanji" kanjiOnly />
         </div>
         <h1 class="text-4xl text-center">
             {{ item.name }}
@@ -47,7 +47,11 @@ const version = import.meta.env.VITE_APP_VERSION
         <p class="font-bold mt-6">Prayer Requests</p>
 
         <ul class="list-decimal list-outside pl-5">
-            <li class="mt-2" v-for="request of item.prayer_points">
+            <li
+                class="mt-2"
+                v-for="(request, i) of item.prayer_points"
+                :key="i"
+            >
                 {{ request }}
             </li>
         </ul>
