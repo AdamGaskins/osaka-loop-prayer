@@ -1,6 +1,6 @@
 number: 12
 name: Fukushima
-name_kanji: '福[ふく]島[しま]'
+name_kanji: 福[ふく]島[しま]
 description: >-
     Fukushima boasts streets upon streets full of quaint restaurants, providing
     a much quieter alternative to the bustling city center nearby. This area is
@@ -8,7 +8,7 @@ description: >-
     are nestled right next to modern apartments and cafes.
 song: Dream Flower
 verses:
-    - ref: 'Isaiah 43:19'
+    - ref: Isaiah 43:19
       text: >-
           Behold, I am doing a new thing; now it springs forth, do you not
           perceive it? I will make a way in the wilderness and rivers in the

@@ -1,18 +1,18 @@
 number: 17
 name: Ashiharabashi
-name_kanji: '芦[あし]原[はら]橋[ばし]'
+name_kanji: 芦[あし]原[はら]橋[ばし]
 description: >-
     Ashiharabashi is known for its famous landmarks in nearby Namba but also for
     many long established drum makers. These drums have a long tradition of
     being used to worship the many false gods of Japan.
 song: Festival
 verses:
-    - ref: 'Psalm 150:5-6'
+    - ref: Psalm 150:5-6
       text: >-
           Praise him with sounding cymbals; praise him with loud clashing
           cymbals! Let everything that has breath praise the Lord! Praise the
           Lord!
-    - ref: '2 Corinthians 5:20'
+    - ref: 2 Corinthians 5:20
       text: >-
           Therefore, we are ambassadors for Christ, God making his appeal
           through us. We implore you on behalf of Christ, be reconciled to God.

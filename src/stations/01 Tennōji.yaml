@@ -1,6 +1,6 @@
 number: 1
 name: Tennōji
-name_kanji: '天[てん]王[おう]寺[じ]'
+name_kanji: 天[てん]王[おう]寺[じ]
 description: >-
     Tennoji is home to Abeno Harukas, one of the tallest buildings in Japan.
     Shitennoji Temple is also located nearby, known for the bells which are rung
@@ -8,13 +8,13 @@ description: >-
     due to the crowds.
 song: Are You to Ring that Bell
 verses:
-    - ref: 'Mark 4:19-20'
+    - ref: Mark 4:19-20
       text: >-
           But the cares of the world and the deceitfulness of riches and the
           desires for other things enter in and choke the word, and it proves
           unfruitful. But those that were sown on the good soil are the ones who
           hear the word and accept it and bear fruit.
-    - ref: 'Philippians 1:27'
+    - ref: Philippians 1:27
       text: >-
           I may hear of you that you are standing firm in one spirit, with one
           mind striving side by side for the faith of the gospel.

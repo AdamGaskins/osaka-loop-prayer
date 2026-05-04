@@ -1,6 +1,6 @@
 number: 18
 name: Imamiya
-name_kanji: '今[いま]宮[みや]'
+name_kanji: 今[いま]宮[みや]
 description: >-
     Shinto, the native religion of Japan, considers anything related to death as
     unclean and repugnant. Since the people of Imamiya, "leather city" were
@@ -8,11 +8,11 @@ description: >-
     unclean.
 song: God of Great Darkness and Fortune
 verses:
-    - ref: '1 John 1:9'
+    - ref: 1 John 1:9
       text: >-
           If we confess our sins, he is faithful and just to forgive us our sins
           and to cleanse us from all unrighteousness.
-    - ref: 'Isaiah 61:1'
+    - ref: Isaiah 61:1
       text: >-
           He has sent me to bind up the brokenhearted, to proclaim liberty to
           the captives, and the opening of the prison to those who are bound;

@@ -1,6 +1,6 @@
 number: 4
 name: Tsuruhashi
-name_kanji: '鶴[つる]橋[はし]'
+name_kanji: 鶴[つる]橋[はし]
 description: >-
     Tsuruhashi is the center of Osaka's Korea Town, well-known for its many
     Korean restaurants and shops. The aroma of delicious food can be enjoyed
@@ -8,18 +8,20 @@ description: >-
     largest "slum," is a reflection of a different era.
 song: All You Can Eat Yodel
 verses:
-    - ref: '2 Corinthians 2:14-16'
+    - ref: 2 Corinthians 2:14-16
       text: >-
           Through us spreads the fragrance of the knowledge of him everywhere.
           For we are the aroma of Christ to God among those who are being saved
           and among those who are perishing, to one a fragrance from death to
           death, to the other a fragrance from life to life.
-    - ref: 'John 6:35'
+    - ref: John 6:35
       text: >-
           Jesus said to them, "I am the bread of life; whoever comes to me shall
           not hunger, and whoever believes in me shall never thirst."
 prayer_points:
-    - Pray that the Gospel will be pleasant and appealing to all those who hear.
+    - >-
+        Pray that the Gospel will be pleasant and appealing to all those who
+        hear.
     - >-
         Pray that as Jesus is shared, the Holy Spirit would work in the hearts
         and minds of the Japanese to feel His peace and hope.

@@ -1,13 +1,13 @@
 number: 14
 name: Nishikujō
-name_kanji: '西[にし]九[く]条[じょう]'
+name_kanji: 西[にし]九[く]条[じょう]
 description: >-
     Nishi-Kujo is the nearest station to the Japan Rail West training facility,
     employing over 47,000 Japanese. Many also transfer here for the popular
     theme park, Universal Studios Japan.
 song: American Patrol
 verses:
-    - ref: 'Psalm 139:14-15'
+    - ref: Psalm 139:14-15
       text: >-
           I praise you, for I am fearfully and wonderfully made. Wonderful are
           your works; my soul knows it very well. My frame was not hidden from

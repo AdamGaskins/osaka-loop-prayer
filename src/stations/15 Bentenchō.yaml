@@ -1,6 +1,6 @@
 number: 15
 name: Bentenchō
-name_kanji: '弁[べん]天[てん]町[ちょう]'
+name_kanji: 弁[べん]天[てん]町[ちょう]
 description: >-
     The smallest of the stations along the loop line, Bentenchō serves a quiet
     area and provides a transfer to the Chuo Subway Line. Small as it is, still
@@ -8,12 +8,12 @@ description: >-
     about the gospel.
 song: I've been workin' on the railroad
 verses:
-    - ref: 'Micah 5:2'
+    - ref: Micah 5:2
       text: >-
           But you, O Bethlehem Ephrathah, who are too little to be among the
           clans of Judah, from you shall come forth for me one who is to be
           ruler in Israel, whose coming forth is from of old, from ancient days.
-    - ref: 'John 6:51'
+    - ref: John 6:51
       text: >-
           I am the living bread that came down from heaven. If anyone eats of
           this bread, he will live forever. And the bread that I will give for

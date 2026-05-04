@@ -1,6 +1,6 @@
 number: 7
 name: Ōsakajōkōen
-name_kanji: '大[おお]阪[さか]城[じょう]公[こう]園[えん]'
+name_kanji: 大[おお]阪[さか]城[じょう]公[こう]園[えん]
 description: >-
     Ōsakajōkōen ("Osaka Castle Park") is one of two stations that provide access
     to the famous Osaka Castle. In the spring, the Castle becomes one of Osaka's
@@ -8,12 +8,12 @@ description: >-
     most recently in 1931, with the interior now functioning as a modern museum.
 song: Conch
 verses:
-    - ref: 'Psalm 18:2'
+    - ref: Psalm 18:2
       text: >-
           The Lord is my rock and my fortress and my deliverer, my God, my rock,
           in whom I take refuge, my shield, and the horn of my salvation, my
           stronghold.
-    - ref: 'Psalm 27:1-3'
+    - ref: Psalm 27:1-3
       text: >-
           The Lord is my light and my salvation; whom shall I fear? The Lord is
           the stronghold of my life; of whom shall I be afraid?

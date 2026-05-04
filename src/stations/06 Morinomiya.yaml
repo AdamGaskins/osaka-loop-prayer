@@ -1,6 +1,6 @@
 number: 6
 name: Morinomiya
-name_kanji: '森[もり]ノ 宮[みや]'
+name_kanji: 森[もり]ノ 宮[みや]
 description: >-
     This station is one of two that provide access to Osaka Castle Park. This
     half of the park is home to a large, majestic fountain, as well as a small
@@ -8,12 +8,12 @@ description: >-
     a jogging track in the sky.
 song: Bear of the Forest
 verses:
-    - ref: 'John 7:36-38'
+    - ref: John 7:36-38
       text: >-
           Jesus stood up and cried out, "If anyone thirsts, let him come to me
           and drink. Whoever believes in me, as the scripture has said, 'Out of
           his heart will flow rivers of living water.'"
-    - ref: 'Romans 1:20'
+    - ref: Romans 1:20
       text: >-
           For his invisible attributes, namely, his eternal power and divine
           nature, have been clearly perceived, ever since the creation of the

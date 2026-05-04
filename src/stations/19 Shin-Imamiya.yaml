@@ -1,6 +1,6 @@
 number: 19
 name: Shin-Imamiya
-name_kanji: '新[しん]今[いま]宮[みや]'
+name_kanji: 新[しん]今[いま]宮[みや]
 description: >-
     This area is sadly "home" to many homeless, outcasts and victims of
     overwhelming cultural pressures. Each year, the nearby Ebisu Shrine hosts a
@@ -8,11 +8,11 @@ description: >-
     prosperity.
 song: New World
 verses:
-    - ref: 'John 6:51'
+    - ref: John 6:51
       text: >-
           I am the living bread that came down from heaven. If anyone eats of
           this bread, he will live forever.
-    - ref: 'Luke 12:33'
+    - ref: Luke 12:33
       text: >-
           Sell your possessions, and give to the needy. Provide yourselves with
           moneybags that do not grow old, with a treasure in the heavens that

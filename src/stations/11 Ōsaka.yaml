@@ -1,18 +1,18 @@
 number: 11
 name: Ōsaka
-name_kanji: '大[おお]阪[さか]'
+name_kanji: 大[おお]阪[さか]
 description: >-
     Osaka Station is largest station in the city, housing a total of 5 train
     lines not to mention the subway lines. Over 500,000 people pass through the
     station each day.
 song: I Really Like it Here
 verses:
-    - ref: 'Matthew 9:37-38'
+    - ref: Matthew 9:37-38
       text: >-
           Then he said, "The harvest is plentiful, but the laborers are few;
           therefore pray earnestly to the Lord of the harvest to send out
           laborers into his harvest."
-    - ref: 'Matthew 9:36'
+    - ref: Matthew 9:36
       text: >-
           When he saw the crowds, he had compassion on them, because they were
           harassed and helpless, like sheep without a shepherd.

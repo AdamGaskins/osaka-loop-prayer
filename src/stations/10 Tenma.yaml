@@ -1,6 +1,6 @@
 number: 10
 name: Tenma
-name_kanji: '天[てん]満[ま]'
+name_kanji: 天[てん]満[ま]
 description: >-
     The Tenma area is home to the longest shopping street in Japan, over 1.5
     miles. This area began to flourish due to the nearby Shinto shrine where
@@ -8,7 +8,7 @@ description: >-
     fireworks and parades along the street and river.
 song: Fireworks
 verses:
-    - ref: 'Ephesians 2:12-13'
+    - ref: Ephesians 2:12-13
       text: >-
           Remember that you were at that time separated from Christ, ... having
           no hope and without God in the world. But now in Christ Jesus you who
