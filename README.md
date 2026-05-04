@@ -6,32 +6,32 @@ https://docs.google.com/spreadsheets/d/1dIkCiH5ScBoW7Jkatv3Bfuwq-k0CQzUzo7Qp8IDo
 
 # Developer Documentation
 
-## Updating station information
+### Updating station information
 
 1. Download the above spreadsheet as an XLSX file
 1. Run the following command:
    `./scripts/data_convert.ts to_yaml "~/Downloads/Osaka Loop Prayer Content.xlsx"`
 
-## Developing
+### Developing
 
 ```
 npm install
 npm run dev
 ```
 
-## Building
+$## Building
 
 ```
 npm run build
 ```
 
-## Deploying
+### Deploying
 
 ```
 npm run deploy
 ```
 
-## Resources
+### Resources
 
 Station Melodies:
 https://www.westjr.co.jp/press/article/items/150316_00_osakaloop.pdf
