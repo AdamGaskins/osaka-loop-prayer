@@ -1,7 +1,16 @@
-## Editing
+# Station Prayer Points
 
-The information for each station can be found and edited in `src/stations/`. The
-station info is written in the YAML format.
+Edit the station information and prayer points here:
+
+https://docs.google.com/spreadsheets/d/1dIkCiH5ScBoW7Jkatv3Bfuwq-k0CQzUzo7Qp8IDok3s/edit?usp=sharing
+
+# Developer Documentation
+
+## Updating station information
+
+1. Download the above spreadsheet as an XLSX file
+1. Run the following command:
+   `./scripts/data_convert.ts to_yaml "~/Downloads/Osaka Loop Prayer Content.xlsx"`
 
 ## Developing
 
