@@ -19,7 +19,7 @@ npm install
 npm run dev
 ```
 
-$## Building
+### Building
 
 ```
 npm run build
