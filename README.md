@@ -25,6 +25,12 @@ npm run dev
 npm run build
 ```
 
+## Deploying
+
+```
+npm run deploy
+```
+
 ## Resources
 
 Station Melodies:
